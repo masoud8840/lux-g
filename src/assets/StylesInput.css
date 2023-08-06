@@ -24,10 +24,10 @@
   }
 
   .menu-item {
-    @apply py-2 px-5 text-white font-light text-lg;
+    @apply py-2 px-5 text-white rounded-full font-light text-lg hover:bg-white/10;
   }
   .signin-btn a {
-    @apply bg-secondary rounded-full text-base font-medium  uppercase;
+    @apply bg-secondary  text-base font-medium  uppercase hover:bg-secondary;
   }
 
   /* Navbar */
