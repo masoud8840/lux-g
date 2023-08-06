@@ -1,0 +1,17 @@
+{
+  "name": "lug-x",
+  "version": "1.0.0",
+  "description": "gaming ecommerce shopping site",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npx tailwindcss -i ./src/assets/StylesInput.css -o ./public/css/Styles.css --watch"
+  },
+  "keywords": [
+    "gaming",
+    "shop",
+    "gaming",
+    "ecommerce"
+  ],
+  "author": "Masoud Gharedaghi",
+  "license": "ISC"
+}
