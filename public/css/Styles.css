@@ -586,9 +586,7 @@ video {
 /* Navbar */
 
 header{
-  position: fixed;
   top: 0px;
-  z-index: 50;
   width: 100%;
   border-bottom-right-radius: 28px;
   border-bottom-left-radius: 28px;
@@ -596,6 +594,8 @@ header{
   background-color: rgb(0 113 248 / var(--tw-bg-opacity));
   font-family: Poppins;
 }
+
+/* hossein deleted fixed and z-index from above class(header) */
 
 .navbar{
   position: relative;
@@ -1063,10 +1063,6 @@ header{
 
 .relative{
   position: relative;
-}
-
-.sticky{
-  position: sticky;
 }
 
 .left-1\/2{
