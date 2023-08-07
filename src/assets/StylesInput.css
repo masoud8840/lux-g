@@ -10,31 +10,34 @@
 
   /* Navbar */
   header {
-    @apply bg-primary rounded-b-4xl font-poppins fixed top-0 w-full;
+    @apply bg-primary rounded-b-4xl font-poppins fixed top-0 w-full z-50;
   }
 
   .navbar {
-    @apply py-5 flex justify-between items-center;
-  }
-  .navbar-menu {
-    @apply flex space-x-3 items-center;
+    @apply py-5 flex justify-between items-center relative;
   }
 
   .brand {
     @apply w-28;
   }
+  .navbar-menu-toggler {
+    @apply text-white text-2xl visible sm:invisible;
+  }
+
+  .navbar-menu {
+    @apply hidden sm:flex sm:relative absolute top-full left-1/2 -translate-x-1/2 sm:translate-x-0 sm:left-0 gap-3 w-[90%] sm:w-[initial] bg-white rounded-b-2xl sm:bg-transparent;
+  }
 
   .menu-item {
-    @apply py-2 px-5 text-white rounded-full font-light hover:bg-white/10 transition-colors duration-200;
+    @apply sm:hover:bg-white/10 sm:text-white sm:py-2 sm:px-4 sm:rounded-full transition-colors duration-200 block py-4 border-b-[1px] border-b-gray-200 text-center hover:text-secondary sm:hover:text-white sm:border-0;
   }
   .signin-btn a {
-    @apply bg-secondary font-medium  uppercase hover:bg-secondary;
+    @apply sm:font-medium capitalize sm:uppercase sm:bg-secondary sm:hover:bg-secondary border-0;
   }
 
   /* Navbar */
 
   /* Shop.html */
-
   .shop-header {
     @apply bg-[url('/public/images/HeaderBackground.jpg')] object-cover bg-center bg-cover min-h-[65vh] rounded-b-4xl md:rounded-b-5xl flex items-center justify-center flex-col;
   }
@@ -112,4 +115,6 @@
   .shop-footer {
     @apply bg-[url('/public/images/FooterBackground.jpg')] bg-cover bg-no-repeat bg-center object-cover min-h-[25vh] gap-4 rounded-t-4xl md:rounded-t-5xl lg:flex text-white text-center justify-center text-lg pt-5;
   }
+
+  /* Shop.html */
 }
