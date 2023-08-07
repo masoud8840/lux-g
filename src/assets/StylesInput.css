@@ -32,4 +32,84 @@
   }
 
   /* Navbar */
+
+  /* Shop.html */
+
+  .shop-header {
+    @apply bg-[url('/public/images/HeaderBackground.jpg')] object-cover bg-center bg-cover min-h-[65vh] rounded-b-4xl md:rounded-b-5xl flex items-center justify-center flex-col;
+  }
+  .shop-view-title {
+    @apply text-5xl font-bold uppercase text-white leading-loose;
+  }
+  .breadcrumb {
+    @apply text-white font-medium text-lg;
+  }
+
+  .categories {
+    @apply container mt-16;
+  }
+
+  .category-options {
+    @apply flex justify-center gap-3 text-center flex-wrap;
+  }
+
+  .category-option {
+    @apply py-2 px-5 rounded-full bg-gray-200 uppercase text-sm font-semibold transition-colors hover:text-secondary;
+  }
+
+  .category-option.active {
+    @apply bg-secondary text-white;
+  }
+
+  .product-item {
+    @apply bg-gray-200 rounded-4xl overflow-hidden cursor-pointer relative;
+  }
+  .products-list {
+    @apply gap-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-16;
+  }
+  .product-item-img {
+    @apply object-fill w-full;
+  }
+
+  .product-item-description {
+    @apply flex justify-between items-center p-5;
+  }
+  .product-item-genre {
+    @apply text-gray-500;
+  }
+  .product-item-title {
+    @apply font-medium text-lg group-hover:text-primary transition-colors duration-200;
+  }
+
+  .product-item-buy {
+    @apply bg-secondary rounded-full w-8 h-8 text-white transition-colors duration-200 group-hover:bg-primary;
+  }
+
+  .product-item-price {
+    @apply absolute top-5 right-5 rounded-2xl py-2 px-5 text-white bg-primary text-end flex flex-col;
+  }
+
+  .off-price {
+    @apply line-through text-sm;
+  }
+  .new-price {
+    @apply text-xl font-medium;
+  }
+
+  .pagination {
+    @apply flex justify-center items-center gap-4 my-16;
+  }
+  .page-item {
+    @apply w-8 h-8 flex justify-center items-center rounded-full text-lg bg-gray-200 hover:text-white hover:bg-primary transition-colors duration-200;
+  }
+  .page-item.active {
+    @apply text-white bg-primary;
+  }
+  .pagination-pages {
+    @apply flex justify-center gap-3;
+  }
+
+  .shop-footer {
+    @apply bg-[url('/public/images/FooterBackground.jpg')] bg-cover bg-no-repeat bg-center object-cover min-h-[25vh] gap-4 rounded-t-4xl md:rounded-t-5xl lg:flex text-white text-center justify-center text-lg pt-5;
+  }
 }
