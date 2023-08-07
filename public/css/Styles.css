@@ -651,10 +651,91 @@ header{
 
 /* Navbar */
 
-.min-h-\[50vh\]{
-  min-height: 50vh;
+.flex{
+  display: flex;
+}
+
+.min-h-\[65vh\]{
+  min-height: 65vh;
+}
+
+.flex-col{
+  flex-direction: column;
+}
+
+.items-center{
+  align-items: center;
+}
+
+.justify-center{
+  justify-content: center;
+}
+
+.rounded-b-5xl{
+  border-bottom-right-radius: 120px;
+  border-bottom-left-radius: 120px;
 }
 
 .bg-\[url\(\'\/public\/images\/HeaderBackground\.jpg\'\)\]{
   background-image: url('/public/images/HeaderBackground.jpg');
+}
+
+.bg-cover{
+  background-size: cover;
+}
+
+.bg-center{
+  background-position: center;
+}
+
+.object-cover{
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.pt-5{
+  padding-top: 1.25rem;
+}
+
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
+}
+
+.text-lg{
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.font-bold{
+  font-weight: 700;
+}
+
+.font-medium{
+  font-weight: 500;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.leading-9{
+  line-height: 2.25rem;
+}
+
+.leading-snug{
+  line-height: 1.375;
+}
+
+.leading-relaxed{
+  line-height: 1.625;
+}
+
+.leading-loose{
+  line-height: 2;
+}
+
+.text-white{
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
