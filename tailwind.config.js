@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         poppins: "Poppins",
       },
+
       backgroundColor: {
         primary: "#0071f8",
         secondary: "rgb(238, 98, 107)",
@@ -14,6 +15,7 @@ module.exports = {
       borderRadius: {
         "4xl": "28px",
       },
+      
     },
   },
   plugins: [],
