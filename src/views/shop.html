@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/public/css/Styles.css" />
+    <!-- FontAwesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/77a0e9b908.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Script -->
+    <script src="/src/composables/Script.js" defer></script>
+    <title>LUXG | Our Shop</title>
+  </head>
+  <body>
+    <header>
+      <nav class="container navbar">
+        <a href="/src/views/index.html" class="brand">
+          <img src="/public/images/Navbar/Logo.png" alt="Logo" />
+        </a>
+        <button class="navbar-menu-toggler">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
+        <ul class="navbar-menu">
+          <li><a href="/src/views/index.html" class="menu-item">Home</a></li>
+          <li><a href="/src/views/shop.html" class="menu-item">Shop</a></li>
+          <li><a href="/contact-us" class="menu-item">Contact Us</a></li>
+          <li class="signin-btn">
+            <a href="/signin" class="menu-item">sign in</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="shop-view pt-5">
+      <section class="shop-header">
+        <h2 class="shop-view-title">Our Shop</h2>
+        <section class="breadcrumb">
+          <a href="/">Home</a>
+          <span>&gt; Our Shop</span>
+        </section>
+      </section>
+
+      <section class="categories">
+        <section class="category-options">
+          <button class="category-option active">Show all</button>
+          <button class="category-option">adventure</button>
+          <button class="category-option">strategy</button>
+          <button class="category-option">racing</button>
+          <button class="category-option">simulation</button>
+        </section>
+        <section class="products-list">
+          <article class="product-item group">
+            <img
+              class="product-item-img"
+              src="/public/images/Products/Product02.jpg"
+              alt="product-img"
+            />
+            <div class="product-item-description">
+              <div>
+                <span class="product-item-genre">Action</span>
+                <h4 class="product-item-title">Assasin Creed</h4>
+              </div>
+              <button class="product-item-buy">
+                <i class="fas fa-sharp fa-light fa-bag-shopping"></i>
+              </button>
+            </div>
+            <div class="product-item-price">
+              <span class="off-price">$28</span>
+              <span class="new-price">$18</span>
+            </div>
+          </article>
+        </section>
+        <section class="pagination">
+          <a href="#" class="page-item">&lt;</a>
+          <div class="pagination-pages">
+            <a href="#" class="page-item active">1</a>
+            <a href="#" class="page-item">2</a>
+            <a href="#" class="page-item">3</a>
+          </div>
+          <a href="#" class="page-item">&gt;</a>
+        </section>
+      </section>
+
+      <footer class="shop-footer">
+        <p>Copyright © 2023 LUGX Gaming Company. All rights reserved.</p>
+        <span>Design: TeamWork</span>
+      </footer>
+    </main>
+  </body>
+</html>
