@@ -5,18 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Style Sheet -->
     <link rel="stylesheet" href="/public/css/Styles.css" />
+    <!-- FontAwesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/77a0e9b908.js"
+      crossorigin="anonymous"
+    ></script>
 
     <title>LUXG | Shop</title>
   </head>
   <body>
     <header>
       <nav class="container navbar">
-        <a href="/" class="brand">
+        <a href="/src/views/index.html" class="brand">
           <img src="/public/images/Navbar/Logo.png" alt="Logo" />
         </a>
         <ul class="navbar-menu">
-          <li><a href="/" class="menu-item">Home</a></li>
-          <li><a href="/shop" class="menu-item">Shop</a></li>
+          <li><a href="/src/views/index.html" class="menu-item">Home</a></li>
+          <li><a href="/src/views/shop.html" class="menu-item">Shop</a></li>
           <li><a href="/contact-us" class="menu-item">Contact Us</a></li>
           <li class="signin-btn">
             <a href="/signin" class="menu-item">sign in</a>
@@ -27,7 +32,7 @@
 
     <main class="shop-view pt-5">
       <section
-        class="shop-header bg-[url('/public/images/HeaderBackground.jpg')] object-cover bg-center bg-cover min-h-[65vh] rounded-b-5xl flex items-center justify-center flex-col"
+        class="shop-header bg-[url('/public/images/HeaderBackground.jpg')] object-cover bg-center bg-cover min-h-[65vh] rounded-b-4xl md:rounded-b-5xl flex items-center justify-center flex-col"
       >
         <h2
           class="shop-view-title text-5xl font-bold uppercase text-white leading-loose"
@@ -39,6 +44,99 @@
           <span>&gt; Our Shop</span>
         </section>
       </section>
+
+      <section class="categories container mt-24">
+        <section
+          class="category-options flex justify-center gap-3 text-center flex-wrap"
+        >
+          <button
+            class="category-option py-2 px-5 rounded-full bg-gray-200 uppercase text-sm font-semibold transition-colors hover:text-secondary"
+          >
+            Show all
+          </button>
+          <button class="category-option">adventure</button>
+          <button class="category-option">strategy</button>
+          <button class="category-option">racing</button>
+          <button class="category-option">simulation</button>
+        </section>
+        <section
+          class="products-list gap-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-24"
+        >
+          <article
+            class="product-item bg-gray-200 rounded-4xl overflow-hidden cursor-pointer group relative"
+          >
+            <img
+              class="product-item-img object-fill w-full"
+              src="/public/images/Products/Product02.jpg"
+              alt="product-img"
+            />
+            <div
+              class="product-item-description flex justify-between items-center px-3 py-4"
+            >
+              <div>
+                <span class="product-item-genre text-gray-500">Action</span>
+                <h4
+                  class="product-item-title font-medium text-lg group-hover:text-primary transition-colors duration-200"
+                >
+                  Assasin Creed
+                </h4>
+              </div>
+              <button
+                class="product-item-buy bg-secondary rounded-full w-8 h-8 text-white transition-colors duration-200 group-hover:bg-primary"
+              >
+                <i class="fas fa-sharp fa-light fa-bag-shopping"></i>
+              </button>
+            </div>
+            <div
+              class="product-item-price absolute top-5 right-5 rounded-2xl py-2 px-5 text-white bg-primary text-end flex flex-col"
+            >
+              <span class="off-price line-through text-sm">$28</span>
+              <span class="new-price text-xl font-medium">$18</span>
+            </div>
+          </article>
+        </section>
+        <section
+          class="pagination flex justify-center items-center gap-4 my-16"
+        >
+          <a
+            href="#"
+            class="page-item w-8 h-8 flex justify-center items-center rounded-full text-lg bg-gray-200 hover:text-white hover:bg-primary transition-colors duration-200"
+            >&lt;</a
+          >
+          <div class="pagination-pages flex justify-center gap-3">
+            <a
+              href="#"
+              class="page-item p-3 w-8 h-8 flex justify-center items-center rounded-full text-lg bg-gray-200"
+            >
+              1
+            </a>
+            <a
+              href="#"
+              class="page-item p-3 w-8 h-8 flex justify-center items-center rounded-full text-lg bg-gray-200"
+            >
+              2
+            </a>
+            <a
+              href="#"
+              class="page-item p-3 w-8 h-8 flex justify-center items-center rounded-full text-lg bg-gray-200"
+            >
+              3
+            </a>
+          </div>
+          <a
+            href="#"
+            class="page-item w-8 h-8 flex justify-center items-center rounded-full text-lg bg-gray-200"
+            >&gt;</a
+          >
+        </section>
+      </section>
+
+      <footer
+        class="bg-[url('/public/images/FooterBackground.jpg')] bg-cover bg-no-repeat bg-center object-cover min-h-[25vh] gap-4 rounded-t-4xl md:rounded-t-5xl lg:flex text-white text-center justify-center text-lg pt-5"
+      >
+        <p>Copyright © 2023 LUGX Gaming Company. All rights reserved.</p>
+        <span>Design: TeamWork</span>
+      </footer>
     </main>
   </body>
 </html>
