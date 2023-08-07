@@ -586,6 +586,9 @@ video {
 /* Navbar */
 
 header{
+  position: fixed;
+  top: 0px;
+  width: 100%;
   border-bottom-right-radius: 28px;
   border-bottom-left-radius: 28px;
   --tw-bg-opacity: 1;
@@ -647,3 +650,11 @@ header{
 }
 
 /* Navbar */
+
+.min-h-\[50vh\]{
+  min-height: 50vh;
+}
+
+.bg-\[url\(\'\/public\/images\/HeaderBackground\.jpg\'\)\]{
+  background-image: url('/public/images/HeaderBackground.jpg');
+}

@@ -10,7 +10,7 @@
 
   /* Navbar */
   header {
-    @apply bg-primary rounded-b-4xl font-poppins;
+    @apply bg-primary rounded-b-4xl font-poppins fixed top-0 w-full;
   }
 
   .navbar {
