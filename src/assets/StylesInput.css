@@ -34,7 +34,6 @@
   .signin-btn a {
     @apply sm:font-medium capitalize sm:uppercase sm:bg-secondary sm:hover:bg-secondary border-0;
   }
-
   /* Navbar */
 
   /* Shop.html */
@@ -117,4 +116,13 @@
   }
 
   /* Shop.html */
+
+  /* main */
+  .info-box {
+    @apply flex flex-col;
+  }
+  .menu__list {
+    @apply text-[#aaaaaa] text-base mb-8;
+  }
+  /* main */
 }

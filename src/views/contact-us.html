@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style Sheet -->
+    <link rel="stylesheet" href="/public/css/Styles.css" />
+
+    <!-- Poppins Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Script -->
+    <script src="/src/composables/Script.js" defer></script>
+
+    <title>LUGX | Home Page</title>
+  </head>
+  <body class="bg-white">
+    <header>
+      <div
+        class="header__title text-center bg-[url('../../public/images/HeaderBackground.jpg')] rounded-b-[100px] bg-no-repeat bg-cover bg-center"
+      >
+        <nav class="container navbar sticky top-0">
+          <a href="/" class="brand">
+            <img src="/public/images/Navbar/Logo.png" alt="Logo" />
+          </a>
+          <ul class="navbar-menu">
+            <li><a href="/" class="menu-item">Home</a></li>
+            <li><a href="/shop" class="menu-item">Shop</a></li>
+            <li><a href="contact-us.html" class="menu-item">Contact Us</a></li>
+
+            <li class="signin-btn">
+              <a href="/signin" class="menu-item">sign in</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="container__header__contact w-4/5 mx-auto py-40">
+          <h1
+            class="header__title__heading text-white font-bold text-[48px] uppercase"
+          >
+            Contact us
+          </h1>
+          <h3 class="text-white text-2xl font-medium">
+            <a href="./index.html">Home</a>>contact us
+          </h3>
+        </div>
+      </div>
+      <main class="flex flex-row mx-auto w-4/5 py-4 h-[1140px]">
+        <section class="section__left w-1/2 flex flex-col justify-center mt-32">
+          <div class="title mb-12">
+            <h2 class="contact-us uppercase text-[#ee626b] font-bold mb-3">
+              contact us
+            </h2>
+            <h1 class="welcome font-extrabold text-black text-3xl mb-5">
+              Say Hello!
+            </h1>
+          </div>
+          <p class="left__p mb-12 text-[#4a4a4a]">
+            LUGX Gaming Template is based on the latest Bootstrap 5 CSS
+            framework. This template is provided by TemplateMo and it is
+            suitable for your gaming shop ecommerce websites. Feel free to use
+            this for any purpose. Thank you.
+          </p>
+          <div class="person_info">
+            <ul class="menu">
+              <li class="menu__list">
+                <span class="text-[#4a4a4a] block text-sm mb-1 font-bold"
+                  >Addres</span
+                >
+                Sunny Isles Beach, FL 33160, United States
+              </li>
+              <li class="menu__list">
+                <span class="text-[#4a4a4a] block text-sm mb-1 font-bold"
+                  >Phone</span
+                >+1234567890
+              </li>
+              <li class="menu__list">
+                <span class="text-[#4a4a4a] block text-sm mb-1 font-bold"
+                  >Email</span
+                >lugx@contact.com
+              </li>
+            </ul>
+          </div>
+        </section>
+        <div class="section__right bg-slate-300"></div>
+      </main>
+      <footer
+        class="footer mt-[150px] bg-[url('../../public/images/FooterBackground.jpg')] py-10 w-full text-center text-white rounded-t-[100px]"
+      >
+        <p class="mb-9 font-semibold text-lg">
+          Copyright &copy; LUGX Caming Company.All rights reserved. Design:
+          TemplateMo
+        </p>
+      </footer>
+    </header>
+  </body>
+</html>

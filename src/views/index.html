@@ -6,17 +6,23 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="/public/css/Styles.css" />
 
+    <!-- Script -->
+    <script src="/src/composables/Script.js" defer></script>
+    
     <title>LUGX | Home Page</title>
   </head>
   <body>
     <header>
       <nav class="container navbar">
-        <a href="/" class="brand">
+        <a href="/src/views/index.html" class="brand">
           <img src="/public/images/Navbar/Logo.png" alt="Logo" />
         </a>
+        <button class="navbar-menu-toggler">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
         <ul class="navbar-menu">
-          <li><a href="/" class="menu-item">Home</a></li>
-          <li><a href="/shop" class="menu-item">Shop</a></li>
+          <li><a href="/src/views/index.html" class="menu-item">Home</a></li>
+          <li><a href="/src/views/shop.html" class="menu-item">Shop</a></li>
           <li><a href="/contact-us" class="menu-item">Contact Us</a></li>
           <li class="signin-btn">
             <a href="/signin" class="menu-item">sign in</a>
