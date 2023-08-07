@@ -13,5 +13,6 @@
     "ecommerce"
   ],
   "author": "Masoud Gharedaghi",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {}
 }
