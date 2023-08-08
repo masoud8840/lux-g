@@ -20,9 +20,9 @@
     <title>LUGX | Home Page</title>
   </head>
   <body class="bg-white">
-    <header>
+    <header class="rounded-[300px]">
       <div
-        class="header__title text-center bg-[url('../../public/images/HeaderBackground.jpg')] rounded-b-[100px] bg-no-repeat bg-cover bg-center"
+        class="header__title text-center bg-[url('../../public/images/HeaderBackground.jpg')] rounded-b-[150px] bg-no-repeat bg-cover bg-center"
       >
         <nav class="container navbar">
           <a href="/src/views/index.html" class="brand">
@@ -54,8 +54,8 @@
         </div>
       </div>
     </header>
-    <main class="flex flex-row mx-auto w-4/5 py-4 h-[1140px]">
-      <section class="section__left w-1/2 flex flex-col justify-center mt-32">
+    <main class="flex flex-row mx-auto w-4/5 py-4 mt-12">
+      <section class="section__left w-1/2 flex flex-col p-16">
         <div class="title mb-12">
           <h2 class="contact-us uppercase text-[#ee626b] font-bold mb-3">
             contact us
@@ -91,7 +91,23 @@
           </ul>
         </div>
       </section>
-      <div class="section__right bg-slate-300"></div>
+      <section class="section__right ml-12 w-1/2">
+        <div class="section__right--map ">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38850.263347629916!2d51.36674482417164!3d35.67256873122361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1691516472449!5m2!1sen!2s" class="w-full rounded-xl" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="section__right--inputs mt-6">
+          <form id="contact-form" class="flex flex-col w-full gap-4">
+            <div class="input-container grid grid-cols-2">
+              <input type="text" class="input-name input-style" placeholder="Your Name...">
+              <input type="text" class="input-sirname input-style" placeholder="Your Surname...">
+              <input type="text" class="input-email input-style" placeholder="Your Email...">
+              <input type="text" class="input-subject input-style" placeholder="Subject...">
+            </div>
+            <textarea name="" id="" cols="30" rows="8" placeholder="" class="text-area rounded-2xl p-2 border-4"></textarea>
+            <button class="submit-btn py-3 rounded-full px-5 mt-4 hover:bg-primary uppercase w-max text-white bg-secondary ">Send Message Now</button>
+          </form>
+        </div>
+      </section>
     </main>
     <footer
       class="footer mt-[150px] bg-[url('../../public/images/FooterBackground.jpg')] py-10 w-full text-center text-white rounded-t-[100px]"

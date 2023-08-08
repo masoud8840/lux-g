@@ -10,10 +10,10 @@
 
   /* Navbar */
   header {
-    @apply bg-primary rounded-b-4xl font-poppins  top-0 w-full ;
+    @apply bg-primary rounded-b-4xl font-poppins top-0 w-full ;
+    /* hossein deleted fixed and z-index from above class(header) */
 
   }
-  /* hossein deleted fixed and z-index from above class(header) */
 
   .navbar {
     @apply py-5 flex justify-between items-center relative ;
@@ -125,6 +125,9 @@
   }
   .menu__list {
     @apply text-[#aaaaaa] text-base mb-8;
+  }
+  .input-style{
+    @apply border-4 mb-4 py-2 px-4 rounded-2xl  border-[#e7e7e7];
   }
   /* main */
 }
