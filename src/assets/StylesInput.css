@@ -10,8 +10,10 @@
 
   /* Navbar */
   header {
-    @apply bg-primary rounded-b-4xl font-poppins fixed top-0 w-full z-50;
+    @apply bg-primary rounded-b-4xl font-poppins  top-0 w-full ;
+
   }
+  /* hossein deleted fixed and z-index from above class(header) */
 
   .navbar {
     @apply py-5 flex justify-between items-center relative ;
