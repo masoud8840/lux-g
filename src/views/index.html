@@ -6,33 +6,155 @@
     <!-- Style Sheet -->
     <link rel="stylesheet" href="/public/css/Styles.css" />
 
-    <!-- Script -->
-    <script src="/src/composables/Script.js" defer></script>
+    <!-- Poppins Font CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
 
     <title>LUGX | Home Page</title>
   </head>
   <body>
-    <header>
-      <nav class="container navbar">
-        <a href="/src/views/index.html" class="brand">
-          <img src="/public/images/Navbar/Logo.png" alt="Logo" />
+    <header class="">
+      <nav class="container navbar  ">
+        <a href="/" class="brand">
+          <img src="/public/image/Navbar/Logo.png" alt="Logo" />
         </a>
-        <button class="navbar-menu-toggler">
-          <i class="fa-sharp fa-solid fa-bars"></i>
-        </button>
         <ul class="navbar-menu">
-          <li><a href="/src/views/index.html" class="menu-item">Home</a></li>
-          <li><a href="/src/views/shop.html" class="menu-item">Shop</a></li>
-          <li>
-            <a href="/src/views/contact-us.html" class="menu-item"
-              >Contact Us</a
-            >
-          </li>
+          <li><a href="index.html" class="menu-item ">Home</a></li>
+          <li><a href="/shop" class="menu-item">Our Shop</a></li>
+          <li><a href="/Product-Detail" class="menu-item">Product-Detail</a></li>
+
+          <li><a href="/contact-us" class="menu-item">Contact Us</a></li>
           <li class="signin-btn">
             <a href="/signin" class="menu-item">sign in</a>
           </li>
         </ul>
       </nav>
+     
     </header>
+    <!-- banner -->
+    <section class="w-full h-[60rem] rounded-b-4xl bg-cover bg-no-repeat " style="background: url('/public/image/banner-bg.jpg');">
+      <div class="banner w-full h-[40rem]  flex justify-center items-center  text-white  ml-14 ">
+        <div class="desc w-1/2 flex flex-col justify-center gap-7">
+          <p class="text-2xl font-semibold">WELCOME To LUGX</p>
+          <h1 class="text-5xl font-bold">BEST GAMING SITE EVER!</h1>
+          <P class="text-base leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt amet consectetur quo excepturi unde expedita quaerat voluptate numquam iste eum voluptates dolorem corporis dolor nihil beatae, tempore accusantium omnis!</P>
+          <div class="search-input ">
+            <form id="search" action="" class="flex justify-between items-center pl-4 bg-white w-[28.125rem] h-12 rounded-4xl ">
+              <input type="text" class="searchText border-none" placeholder="Type Something" name="searchKeyword">
+              <button class="bg-secondary w-38 h-12 rounded-4xl p-6 hover:bg-primary  flex items-center text-base font-semibold">Search Now</button>
+            </form>
+          </div>
+          
+
+        </div>
+        <div class="off w-1/2 flex justify-center relative ">
+          <img class="rounded-4xl" src="/public/image/banner-image.jpg" alt="">
+          <span class="price w-20 h-10 bg-primary absolute rounded-2xl mt-8 ml-52 text-2xl font-bold text-center">$22</span>
+          <span class="offer w-28 h-28 flex justify-center items-center text-white text-4xl font-bold  rounded-full bg-secondary absolute -bottom-5 left-28">-40%</span>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- featutes -->
+    <section class="features m-8">
+      <div class="-mt-20 flex justify-center items-center gap-6 cursor-pointer">
+        <div class="w-80 h-52 bg-white flex flex-col justify-center items-center p-8 rounded-4xl gap-5 ">
+          <div class="image bg-primary hover:bg-secondary w-20 h-20 rounded-full flex justify-center items-center">
+            <img src="/public/image/featured-01.png" alt="">
+          </div>
+          <p class="text-lg font-bold">Free Storage</p>
+          
+        </div>
+        <div class="w-80 h-52 bg-white flex flex-col justify-center items-center p-8 rounded-4xl gap-5 ">
+          <div class="image bg-primary hover:bg-secondary w-20 h-20 rounded-full flex justify-center items-center">
+            <img src="/public/image/featured-01.png" alt="">
+          </div>
+          <p class="text-lg font-bold">Free Storage</p>
+          
+        </div>
+        <div class="w-80 h-52 bg-white flex flex-col justify-center items-center p-8 rounded-4xl gap-5 ">
+          <div class="image bg-primary hover:bg-secondary w-20 h-20 rounded-full flex justify-center items-center">
+            <img src="/public/image/featured-01.png" alt="">
+          </div>
+          <p class="text-lg font-bold">Free Storage</p>
+          
+        </div>
+        <div class="w-80 h-52 bg-white flex flex-col justify-center items-center p-8 rounded-4xl gap-5 ">
+          <div class="image bg-primary hover:bg-secondary w-20 h-20 rounded-full flex justify-center items-center">
+            <img src="/public/image/featured-01.png" alt="">
+          </div>
+          <p class="text-lg font-bold">Free Storage</p>
+          
+        </div>
+      
+      </div>
+   
+    </section>
+
+    <!-- Trending -->
+    <section class="Trending mt-16  ">
+      <div class="flex justify-between ">
+        <div class="flex flex-col justify-center gap-8 ml-10">
+          <p class="text-base text-red-500 font-bold ">Trending</p>
+          <p class="text-black text-4xl font-bold">Trending Games</p>
+        </div>
+        <button class="w-32 h-12 bg-secondary text-sm font-semibold text-white rounded-4xl mr-10">VIEW ALL</button>
+      </div>
+      <div class="trending-cards mt-10 flex justify-center items-center gap-5 rounded-xl">
+        <div class="w-[20rem] h-80 bg-gray-100 grid justify-center">
+          <img class="rounded-2xl w-[20rem] h-56" src="/public/image/top-game-01.jpg" alt="">
+          <div class="m-4">
+            <p class="text-gray-500">Action</p>
+            <p class="text-black font-bold text-lg">Assasin Creed</p>
+          </div>
+          <div class=""></div>
+
+        </div>
+        <div class="w-[20rem] h-80 bg-gray-100 grid justify-center">
+          <img class="rounded-2xl w-[20rem] h-56" src="/public/images/top-game-01.jpg" alt="">
+          <div class="m-4">
+            <p class="text-gray-500">Action</p>
+            <p class="text-black font-bold text-lg">Assasin Creed</p>
+          </div>
+          <div class=""></div>
+
+        </div>
+        <div class="w-[20rem] h-80 bg-gray-100 grid justify-center">
+          <img class="rounded-2xl w-[20rem] h-56" src="/public/image/top-game-01.jpg" alt="">
+          <div class="m-4">
+            <p class="text-gray-500">Action</p>
+            <p class="text-black font-bold text-lg">Assasin Creed</p>
+          </div>
+          <div class=""></div>
+
+        </div>
+        <div class="w-[20rem] h-80 bg-gray-100 grid justify-center">
+          <img class="rounded-2xl w-[20rem] h-56" src="/public/image/top-game-01.jpg" alt="">
+          <div class="m-4">
+            <p class="text-gray-500">Action</p>
+            <p class="text-black font-bold text-lg">Assasin Creed</p>
+          </div>
+          <div class=""></div>
+
+        </div>
+      </div>
+    
+      
+     
+    </section>
+
+
+
+    <!-- footer -->
+    <div class="footer flex justify-center items-center text-white p-20 rounded-t-full bg-primary w-[94rem] h-38">
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, iste?</p>
+
+    </div>
+    
   </body>
 </html>
