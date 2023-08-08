@@ -16,14 +16,14 @@
   /* hossein deleted fixed and z-index from above class(header) */
 
   .navbar {
-    @apply py-5 flex justify-between items-center relative;
+    @apply py-5 flex justify-between items-center relative ;
   }
 
   .brand {
     @apply w-28;
   }
   .navbar-menu-toggler {
-    @apply text-white text-2xl visible sm:invisible;
+    @apply text-white text-2xl visible sm:invisible ;
   }
 
   .navbar-menu {
