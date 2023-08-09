@@ -14,6 +14,12 @@
       rel="stylesheet"
     />
 
+    <!-- FontAwesome Kit -->
+    <script
+      src="https://kit.fontawesome.com/77a0e9b908.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Script -->
     <script src="/src/composables/Script.js" defer></script>
 
@@ -28,15 +34,17 @@
           <a href="/src/views/index.html" class="brand">
             <img src="/public/images/Navbar/Logo.png" alt="Logo" />
           </a>
+          <button class="navbar-menu-toggler">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </button>
           <ul class="navbar-menu">
-            <li><a href="./index.html" class="menu-item">Home</a></li>
-            <li><a href="./shop.html" class="menu-item">Shop</a></li>
+            <li><a href="/src/views/index.html" class="menu-item">Home</a></li>
+            <li><a href="/src/views/shop.html" class="menu-item">Shop</a></li>
             <li>
-              <a href="./contact-us.html" class="menu-item"
+              <a href="/src/views/contact-us.html" class="menu-item"
                 >Contact Us</a
               >
             </li>
-
             <li class="signin-btn">
               <a href="/signin" class="menu-item">sign in</a>
             </li>
@@ -65,10 +73,10 @@
           </h1>
         </div>
         <p class="left__p mb-12 text-[#4a4a4a]">
-          LUGX Gaming Template is based on the latest Bootstrap 5 CSS
-          framework. This template is provided by TemplateMo and it is
-          suitable for your gaming shop ecommerce websites. Feel free to use
-          this for any purpose. Thank you.
+          LUGX Gaming Template is based on the latest Bootstrap 5 CSS framework.
+          This template is provided by TemplateMo and it is suitable for your
+          gaming shop ecommerce websites. Feel free to use this for any purpose.
+          Thank you.
         </p>
         <div class="person_info">
           <ul class="menu">
@@ -92,19 +100,55 @@
         </div>
       </section>
       <section class="section__right ml-12 w-1/2">
-        <div class="section__right--map ">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38850.263347629916!2d51.36674482417164!3d35.67256873122361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1691516472449!5m2!1sen!2s" class="w-full rounded-xl" width="400" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="section__right--map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d38850.263347629916!2d51.36674482417164!3d35.67256873122361!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2s!4v1691516472449!5m2!1sen!2s"
+            class="w-full rounded-xl"
+            width="400"
+            height="450"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
         <div class="section__right--inputs mt-6">
           <form id="contact-form" class="flex flex-col w-full gap-4">
             <div class="input-container grid grid-cols-2">
-              <input type="text" class="input-name input-style" placeholder="Your Name...">
-              <input type="text" class="input-sirname input-style" placeholder="Your Surname...">
-              <input type="text" class="input-email input-style" placeholder="Your Email...">
-              <input type="text" class="input-subject input-style" placeholder="Subject...">
+              <input
+                type="text"
+                class="input-name input-style"
+                placeholder="Your Name..."
+              />
+              <input
+                type="text"
+                class="input-sirname input-style"
+                placeholder="Your Surname..."
+              />
+              <input
+                type="text"
+                class="input-email input-style"
+                placeholder="Your Email..."
+              />
+              <input
+                type="text"
+                class="input-subject input-style"
+                placeholder="Subject..."
+              />
             </div>
-            <textarea name="" id="" cols="30" rows="8" placeholder="" class="text-area rounded-2xl p-2 border-4"></textarea>
-            <button class="submit-btn py-3 rounded-full px-5 mt-4 hover:bg-primary uppercase w-max text-white bg-secondary ">Send Message Now</button>
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="8"
+              placeholder=""
+              class="text-area rounded-2xl p-2 border-4"
+            ></textarea>
+            <button
+              class="submit-btn py-3 rounded-full px-5 mt-4 hover:bg-primary uppercase w-max text-white bg-secondary"
+            >
+              Send Message Now
+            </button>
           </form>
         </div>
       </section>
