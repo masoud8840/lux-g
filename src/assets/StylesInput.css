@@ -4,26 +4,28 @@
 @tailwind utilities;
 
 @layer components {
+  * {
+    @apply font-poppins;
+  }
   .container {
     @apply mx-auto px-3 lg:p-3;
   }
 
   /* Navbar */
   header {
-    @apply bg-primary rounded-b-4xl font-poppins top-0 w-full ;
+    @apply bg-primary rounded-b-4xl font-poppins top-0 w-full;
     /* hossein deleted fixed and z-index from above class(header) */
-
   }
 
   .navbar {
-    @apply py-5 flex justify-between items-center relative ;
+    @apply py-5 flex justify-between items-center relative;
   }
 
   .brand {
     @apply w-28;
   }
   .navbar-menu-toggler {
-    @apply text-white text-2xl visible sm:invisible ;
+    @apply text-white text-2xl visible sm:invisible;
   }
 
   .navbar-menu {
@@ -39,14 +41,16 @@
   /* Navbar */
 
   /* Shop.html */
-  .shop-header {
-    @apply bg-[url('/public/images/HeaderBackground.jpg')] object-cover bg-center bg-cover min-h-[65vh] rounded-b-4xl md:rounded-b-5xl flex items-center justify-center flex-col;
+  .shop-header,
+  .product-header {
+    @apply bg-[url('/public/images/HeaderBackground.jpg')] object-cover bg-center bg-cover min-h-[65vh] rounded-b-4xl md:rounded-b-5xl flex items-center justify-center flex-col gap-4;
   }
-  .shop-view-title {
-    @apply text-5xl font-bold uppercase text-white leading-loose;
+  .shop-view-title,
+  .product-view-title {
+    @apply text-2xl sm:text-4xl font-bold uppercase text-white;
   }
   .breadcrumb {
-    @apply text-white font-medium text-lg;
+    @apply text-white font-medium text-sm sm:text-lg;
   }
 
   .categories {
@@ -113,7 +117,8 @@
     @apply flex justify-center gap-3;
   }
 
-  .shop-footer {
+  .shop-footer,
+  .product-footer {
     @apply bg-[url('/public/images/FooterBackground.jpg')] bg-cover bg-no-repeat bg-center object-cover min-h-[25vh] gap-4 rounded-t-4xl md:rounded-t-5xl lg:flex text-white text-center justify-center text-lg pt-5;
   }
 
@@ -126,7 +131,7 @@
   .menu__list {
     @apply text-[#aaaaaa] text-base mb-8;
   }
-  .input-style{
+  .input-style {
     @apply border-4 mb-4 py-2 px-4 rounded-2xl  border-[#e7e7e7];
   }
   /* main */
