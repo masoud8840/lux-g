@@ -1506,6 +1506,10 @@ header{
   grid-column: span 2 / span 2;
 }
 
+.m-2{
+  margin: 0.5rem;
+}
+
 .m-4{
   margin: 1rem;
 }
@@ -1626,16 +1630,16 @@ header{
   margin-top: 2rem;
 }
 
-.ml-7{
-  margin-left: 1.75rem;
-}
-
 .block{
   display: block;
 }
 
 .flex{
   display: flex;
+}
+
+.inline-flex{
+  display: inline-flex;
 }
 
 .grid{
@@ -1688,6 +1692,14 @@ header{
 
 .h-80{
   height: 20rem;
+}
+
+.h-\[27rem\]{
+  height: 27rem;
+}
+
+.h-\[29rem\]{
+  height: 29rem;
 }
 
 .h-\[43\.5rem\]{
@@ -1762,8 +1774,16 @@ header{
   width: 20rem;
 }
 
+.w-\[21rem\]{
+  width: 21rem;
+}
+
 .w-\[28\.125rem\]{
   width: 28.125rem;
+}
+
+.w-\[32rem\]{
+  width: 32rem;
 }
 
 .w-\[90\%\]{
@@ -1816,6 +1836,10 @@ header{
 
 .grid-cols-2{
   grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.grid-cols-4{
+  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-row{
@@ -1997,11 +2021,6 @@ header{
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
-.bg-blue-950{
-  --tw-bg-opacity: 1;
-  background-color: rgb(23 37 84 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\.\.\/\.\.\/public\/images\/FooterBackground\.jpg\'\)\]{
   background-image: url('../../public/images/FooterBackground.jpg');
 }
@@ -2138,10 +2157,6 @@ header{
 
 .pl-4{
   padding-left: 1rem;
-}
-
-.pl-5{
-  padding-left: 1.25rem;
 }
 
 .pl-7{
@@ -2400,6 +2415,14 @@ header{
 }
 
 @media not all and (min-width: 640px){
+  .max-sm\:bottom-8{
+    bottom: 2rem;
+  }
+
+  .max-sm\:left-10{
+    left: 2.5rem;
+  }
+
   .max-sm\:m-0{
     margin: 0px;
   }
@@ -2413,20 +2436,105 @@ header{
     margin-right: 0.75rem;
   }
 
+  .max-sm\:mb-40{
+    margin-bottom: 10rem;
+  }
+
+  .max-sm\:ml-0{
+    margin-left: 0px;
+  }
+
   .max-sm\:mt-10{
     margin-top: 2.5rem;
+  }
+
+  .max-sm\:mt-20{
+    margin-top: 5rem;
+  }
+
+  .max-sm\:mt-4{
+    margin-top: 1rem;
+  }
+
+  .max-sm\:mt-40{
+    margin-top: 10rem;
+  }
+
+  .max-sm\:mt-8{
+    margin-top: 2rem;
+  }
+
+  .max-sm\:mt-96{
+    margin-top: 24rem;
   }
 
   .max-sm\:flex{
     display: flex;
   }
 
+  .max-sm\:grid{
+    display: grid;
+  }
+
+  .max-sm\:hidden{
+    display: none;
+  }
+
+  .max-sm\:h-\[100rem\]{
+    height: 100rem;
+  }
+
+  .max-sm\:h-\[29rem\]{
+    height: 29rem;
+  }
+
+  .max-sm\:h-full{
+    height: 100%;
+  }
+
+  .max-sm\:w-24{
+    width: 6rem;
+  }
+
+  .max-sm\:w-80{
+    width: 20rem;
+  }
+
+  .max-sm\:w-96{
+    width: 24rem;
+  }
+
+  .max-sm\:w-\[21rem\]{
+    width: 21rem;
+  }
+
   .max-sm\:w-full{
     width: 100%;
   }
 
+  .max-sm\:translate-x-0{
+    --tw-translate-x: 0px;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+  }
+
+  .max-sm\:grid-cols-1{
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
+
   .max-sm\:flex-col{
     flex-direction: column;
+  }
+
+  .max-sm\:items-center{
+    align-items: center;
+  }
+
+  .max-sm\:gap-16{
+    gap: 4rem;
+  }
+
+  .max-sm\:gap-4{
+    gap: 1rem;
   }
 
   .max-sm\:rounded-xl{
@@ -2447,6 +2555,11 @@ header{
     padding: 1rem;
   }
 
+  .max-sm\:px-2{
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
   .max-sm\:text-center{
     text-align: center;
   }
@@ -2464,6 +2577,11 @@ header{
   .max-sm\:text-xl{
     font-size: 1.25rem;
     line-height: 1.75rem;
+  }
+
+  .max-sm\:text-xs{
+    font-size: 0.75rem;
+    line-height: 1rem;
   }
 
   .max-sm\:font-medium{
