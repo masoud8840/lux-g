@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer base{
+  body{
+    box-sizing: border-box
+  }
+}
 @layer components {
   * {
     @apply font-poppins;
