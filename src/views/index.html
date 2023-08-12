@@ -16,18 +16,20 @@
 
     <title>LUGX | Home Page</title>
   </head>
-  <body>
+  <body class="max-sm:w-96 ">
     <header class="">
-      <nav class="container navbar  ">
-        <a href="/" class="brand">
-          <img src="/public/image/Navbar/Logo.png" alt="Logo" />
+      <nav class="container navbar">
+        <a href="/src/views/index.html" class="brand">
+          <img src="/public/images/Navbar/Logo.png" alt="Logo" />
         </a>
+        <button class="navbar-menu-toggler">
+          <i class="fa-sharp fa-solid fa-bars"></i>
+        </button>
         <ul class="navbar-menu">
-          <li><a href="index.html" class="menu-item ">Home</a></li>
-          <li><a href="shop.html" class="menu-item">Our Shop</a></li>
-          <li><a href="/Product-Detail" class="menu-item">Product-Detail</a></li>
-
-          <li><a href="contact-us.html" class="menu-item">Contact Us</a></li>
+          <li><a href="/src/views/index.html" class="menu-item">Home</a></li>
+          <li><a href="/src/views/shop.html" class="menu-item">Shop</a></li>
+          <li><a href="/src/views/contact-us.html" class="menu-item">Contact Us</a></li>
+          <li><a href="/src/views/product.html" class="menu-item">Product Details</a></li>
           <li class="signin-btn">
             <a href="/signin" class="menu-item">sign in</a>
           </li>
@@ -36,34 +38,36 @@
      
     </header>
     <!-- banner -->
-    <section class="banner-container w-full h-[60rem] flex justify-center items-center rounded-b-4xl bg-cover bg-no-repeat  " style="background: url('/public/image/banner-bg.jpg');">
-      <div class="banner w-full h-auto flex justify-center items-center  text-white ml-10 max-sm:flex-col">
-        <div class="desc w-1/2 flex flex-col justify-center gap-7 ml-10">
+    <section class="banner-container  w-full  h-[60rem] max-sm:h-full  flex justify-center  items-center max-sm:flex-col rounded-b-4xl bg-cover bg-no-repeat max-sm:px-2  " style="background: url('/public/image/banner-bg.jpg');">
+      <div class="banner w-full h-auto flex justify-center items-center  text-white ml-10 max-sm:ml-0 max-sm:flex-col max-sm:mt-20">
+      <div class="banner w-full h-auto flex justify-center items-center  text-white ml-10 max-sm:ml-0 max-sm:flex-col max-sm:mt-40">
+        <div class="desc w-1/2  flex flex-col justify-center max-sm:items-center gap-7 ml-10  max-sm:w-96 max-sm:text-center ">
           <p class="text-2xl font-semibold ">WELCOME To LUGX</p>
-          <h1 class="text-5xl font-bold">BEST GAMING SITE EVER!</h1>
+          <h1 class="text-5xl font-bold ">BEST GAMING SITE EVER!</h1>
           <P class="text-base leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt amet consectetur quo excepturi unde expedita quaerat voluptate numquam iste eum voluptates dolorem corporis dolor nihil beatae, tempore accusantium omnis!</P>
           <div class="search-input ">
-            <form id="search" action="" class="flex justify-between items-center pl-4 bg-white w-[28.125rem] h-12 rounded-4xl ">
-              <input type="text" class="searchText border-none text-black" placeholder="Type Something" name="searchKeyword">
-              <button class="bg-secondary w-38 h-12 rounded-4xl p-6 hover:bg-primary  flex items-center  text-base font-semibold">Search Now</button>
+            <form id="search" action="" class="flex justify-between items-center  bg-white w-[28.125rem]  h-12 rounded-4xl max-sm:w-80 ">
+              <input type="text" class="searchText border-none text-black text-center  m-2" placeholder="Type Something" name="searchKeyword">
+              <button class="bg-secondary w-38 max-sm:w-24 h-12 rounded-4xl p-6 hover:bg-primary   inline-flex items-center  text-sm max-sm:text-xs font-bold ">Search Now</button>
             </form>
           </div>
           
 
         </div>
-        <div class="off w-1/2 flex justify-center relative ">
-          <img class="rounded-4xl" src="/public/image/banner-image.jpg" alt="">
+        <div class="off w-1/2 max-sm:w-80 max-sm:mt-8 flex justify-center relative ">
+          <img class="rounded-4xl " src="/public/image/banner-image.jpg" alt="">
           <span class="price w-20 h-10 bg-primary absolute rounded-2xl mt-8 ml-52 text-2xl font-bold text-center">$22</span>
-          <span class="offer w-28 h-28 flex justify-center items-center text-white text-4xl font-bold  rounded-full bg-secondary absolute -bottom-5 left-28">-40%</span>
+          <span class="offer w-28  h-28 flex justify-center items-center text-white text-4xl font-bold  rounded-full bg-secondary absolute -bottom-5 left-28 max-sm:bottom-8 max-sm:left-10">-40%</span>
         </div>
         
       </div>
+    </div>
     </section>
 
     <!-- featutes -->
-    <section class="features m-8">
-      <div class="-mt-28 flex justify-center items-center gap-6 cursor-pointer">
-        <div class="w-80 h-52 bg-white flex flex-col justify-center items-center p-8 rounded-4xl gap-5 ">
+    <section class="features m-8 ">
+      <div class="-mt-28 max-sm:mt-4 grid grid-cols-4 max-sm:grid-cols-1 justify-center items-center gap-6 cursor-pointer">
+        <div class="w-80  h-52 bg-white flex flex-col justify-center items-center p-8 rounded-4xl gap-5 ">
           <div class="image bg-primary hover:bg-secondary w-20 h-20 rounded-full flex justify-center items-center">
             <img src="/public/image/featured-01.png" alt="">
           </div>
@@ -103,9 +107,9 @@
           <p class="text-base text-red-500 font-bold ">Trending</p>
           <p class="text-black text-4xl font-bold">Trending Games</p>
         </div>
-        <button class="w-32 h-12 bg-secondary text-sm font-semibold text-white rounded-4xl mr-10">VIEW ALL</button>
+        <button class=" max-sm:hidden w-32 h-12 bg-secondary text-sm font-semibold text-white rounded-4xl mr-10">VIEW ALL</button>
       </div>
-      <div class="trending-cards mt-10 flex justify-center items-center gap-5 rounded-xl">
+      <div class="trending-cards mt-10 flex max-sm:grid justify-center items-center gap-5 rounded-xl">
         <div class="w-[20rem] h-80 bg-gray-100 grid justify-center">
           <img class="rounded-2xl w-[20rem] h-56" src="/public/image/trending-01.jpg" alt="">
           <div class="flex justify-between items-center p-4">
@@ -113,7 +117,7 @@
               <p class="text-gray-500">Action</p>
               <p class="text-black font-bold text-lg">Assasin Creed</p>
             </div>
-            <div class="w-10 h-10 bg-secondary rounded-full">
+            <div class="w-10 h-10 bg-secondary hover:bg-primary cursor-pointer rounded-full flex justify-center items-center text-white">
               <i class="fa fa-shopping-bag"></i>
             </div>
           </div>
@@ -127,7 +131,7 @@
               <p class="text-gray-500">Action</p>
               <p class="text-black font-bold text-lg">Assasin Creed</p>
             </div>
-            <div class="w-10 h-10 bg-secondary rounded-full">
+            <div class="w-10 h-10 bg-secondary hover:bg-primary cursor-pointer rounded-full flex justify-center items-center text-white">
               <i class="fa fa-shopping-bag"></i>
             </div>
           </div>
@@ -141,7 +145,7 @@
               <p class="text-gray-500">Action</p>
               <p class="text-black font-bold text-lg">Assasin Creed</p>
             </div>
-            <div class="w-10 h-10 bg-secondary rounded-full">
+            <div class="w-10 h-10 bg-secondary hover:bg-primary cursor-pointer rounded-full flex justify-center items-center text-white">
               <i class="fa fa-shopping-bag"></i>
             </div>
           </div>
@@ -155,7 +159,7 @@
               <p class="text-gray-500">Action</p>
               <p class="text-black font-bold text-lg">Assasin Creed</p>
             </div>
-            <div class="w-10 h-10 bg-secondary rounded-full">
+            <div class="w-10 h-10 bg-secondary hover:bg-primary cursor-pointer rounded-full flex justify-center items-center text-white">
               <i class="fa fa-shopping-bag"></i>
             </div>
           </div>
@@ -167,17 +171,17 @@
     </section>
 
     <!-- TOP GAMES -->
-    <section class="top-games w-full h-[43.5rem] bg-gray-100 mt-32 rounded-4xl p-10">
+    <section class="top-games w-full h-[43.5rem] max-sm:h-[100rem]  bg-gray-100 max-sm:gap-16 mt-32 rounded-4xl p-10 max-sm:mb-40">
       <div class="top-game_title flex justify-between ">
         <div class="flex flex-col justify-center gap-8 ml-10">
           <p class="text-base text-red-500 font-bold ">TOP GAMES</p>
           <p class="text-black text-4xl font-bold">Most Played</p>
         </div>
-        <button class="w-32 h-12 bg-secondary text-sm font-semibold text-white rounded-4xl mr-10 mt-8">VIEW ALL</button>
+        <button class="max-sm:hidden w-32 h-12 bg-secondary text-sm font-semibold text-white rounded-4xl mr-10 mt-8">VIEW ALL</button>
       </div>
-      <div class="flex justify-center items-center mt-32 gap-5">
-        <div class="top-game_item  justify-center items-center w-52 h-72 bg-white rounded-4xl">
-          <img class="w-52 h-44 rounded-4xl" src="/public/image/top-game-01.jpg" alt="">
+      <div class="flex max-sm:grid justify-center items-center mt-32 gap-5">
+        <div class="top-game_item  justify-center items-center w-52 max-sm:w-80 h-72 bg-white rounded-4xl">
+          <img class="w-52 max-sm:w-80 max h-44 rounded-4xl" src="/public/image/top-game-01.jpg" alt="">
           <div class="grid justify-center items-center mt-8 gap-5">
             <div class="">
               <p class="">Adventure</p>
@@ -188,8 +192,8 @@
           </div>
           
         </div>
-        <div class="top-game_item  justify-center items-center w-52 h-72 bg-white rounded-4xl">
-          <img class="w-52 h-44 rounded-4xl" src="/public/image/top-game-02.jpg" alt="">
+        <div class="top-game_item  justify-center items-center w-52 max-sm:w-80 h-72 bg-white rounded-4xl">
+          <img class="w-52 max-sm:w-80 h-44 rounded-4xl" src="/public/image/top-game-02.jpg" alt="">
           <div class="grid justify-center items-center mt-8 gap-5">
             <div class="">
               <p class="">Adventure</p>
@@ -200,8 +204,8 @@
           </div>
           
         </div>
-        <div class="top-game_item  justify-center items-center w-52 h-72 bg-white rounded-4xl">
-          <img class="w-52 h-44 rounded-4xl" src="/public/image/top-game-03.jpg" alt="">
+        <div class="top-game_item  justify-center items-center w-52 max-sm:w-80 h-72 bg-white rounded-4xl">
+          <img class="w-52 max-sm:w-80 h-44 rounded-4xl" src="/public/image/top-game-03.jpg" alt="">
           <div class="grid justify-center items-center mt-8 gap-5">
             <div class="">
               <p class="">Adventure</p>
@@ -212,8 +216,19 @@
           </div>
           
         </div>
-        <div class="top-game_item  justify-center items-center w-52 h-72 bg-white rounded-4xl">
-          <img class="w-52 h-44 rounded-4xl" src="/public/image/top-game-04.jpg" alt="">
+        <div class="top-game_item  justify-center items-center w-52 max-sm:w-80 h-72 bg-white rounded-4xl">
+          <img class="w-52 max-sm:w-80 h-44 rounded-4xl" src="/public/image/top-game-04.jpg" alt="">
+          <div class="grid justify-center items-center mt-8 gap-5">
+            <div class="">
+              <p class="">Adventure</p>
+              <p class="font-bold text-lg">Assasin Creed</p>
+            </div>
+          
+          <button class="bg-secondary flex justify-center items-center rounded-4xl w-22 h-10 text-white text-sm p-4 font-medium -mt-4"><a href="">EXPLORE</a></button>
+          </div>
+        </div>
+        <div class="top-game_item  justify-center items-center w-52 max-sm:w-80 h-72 bg-white rounded-4xl">
+          <img class="w-52 max-sm:w-80 h-44 rounded-4xl" src="/public/image/top-game-05.jpg" alt="">
           <div class="grid justify-center items-center mt-8 gap-5">
             <div class="">
               <p class="">Adventure</p>
@@ -224,40 +239,17 @@
           </div>
           
         </div>
-        <div class="top-game_item  justify-center items-center w-52 h-72 bg-white rounded-4xl">
-          <img class="w-52 h-44 rounded-4xl" src="/public/image/top-game-05.jpg" alt="">
-          <div class="grid justify-center items-center mt-8 gap-5">
-            <div class="">
-              <p class="">Adventure</p>
-              <p class="font-bold text-lg">Assasin Creed</p>
-            </div>
-          
-          <button class="bg-secondary flex justify-center items-center rounded-4xl w-22 h-10 text-white text-sm p-4 font-medium -mt-4"><a href="">EXPLORE</a></button>
-          </div>
-          
-        </div>
-        <div class="top-game_item  w-52 h-72 bg-white rounded-4xl gap-5">
-          <img class="w-52 h-44 rounded-4xl" src="/public/image/top-game-06.jpg" alt="">
-          <div class="grid justify-center items-center mt-8 gap-5">
-            <div class="">
-              <p class="">Adventure</p>
-              <p class="font-bold text-lg">Assasin Creed</p>
-            </div>
-          
-          <button class="bg-secondary flex justify-center items-center rounded-4xl w-22 h-10 text-white text-sm p-4 font-medium -mt-4"><a href="">EXPLORE</a></button>
-          </div>
-          
-        </div>
+       >
       </div>
     </section>
 
     <!-- CATEGORIES -->
-    <section class="categoties mt-32">
-      <div class="categories_title flex flex-col justify-center items-center gap-3">
+    <section class="categoties mt-32 max-sm:mt-96">
+      <div class="categories_title flex  flex-col justify-center items-center gap-3">
         <p class="text-secondary font-bold">CATEGORIES</p>
         <p class="text-4xl font-bold">Top Categories</p>
       </div>
-      <div class="categories-cards flex justify-center items-center gap-5 mt-10">
+      <div class="categories-cards flex max-sm:grid justify-center items-center gap-5 mt-10">
         <div class="categories-item w-60 h-72 rounded-4xl bg-primary flex flex-col justify-between items-center ">
           <p class="text-white font-bold mt-4 text-xl">Action</p>
           <img class="w-60 rounded-4xl" src="/public/image/categories-01.jpg" alt="">
@@ -284,23 +276,23 @@
 
 
     <!-- cta -->
-    <section class="cta mt-32 flex justify-center   ">
+    <section class="cta mt-32 flex max-sm:grid justify-center items-center ">
 
-      <div class=" bg-gray-100 rounded-2xl translate-x-36 mt-16 flex flex-col justify-center items-center p-12 gap-10" style="width: 526px; height: 536px;">
-        <p class="text-secondary font-bold">OUR SHOP</p>
-        <div class="text-4xl font-bold text-black">Go Pre-Order Buy & Get Best <span class="text-primary">Prices</span> For You!</div>
+      <div class="w-[21rem] h-[29rem]  bg-gray-100 rounded-4xl max-sm:translate-x-0 translate-x-36 mt-16 flex flex-col justify-center  items-center p-12  gap-10 max-sm:gap-4" >
+        <p class="text-secondary font-bold ">OUR SHOP</p>
+        <div class="text-4xl  font-bold text-black">Go Pre-Order Buy & Get Best <span class="text-primary">Prices</span> For You!</div>
         <div class="font-bold">Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt</div>
-        <button class="w-32 h-12 rounded-4xl bg-secondary text-white font-bold"><a href="">Shop Now</a></button>
+        <button class="w-32 h-12 rounded-4xl bg-secondary text-white font-bold "><a href="">Shop Now</a></button>
       </div>
-      <div class=" rounded-xl">
+      <div class=" rounded-xl max-sm:hidden">
         <img class="rounded-xl" src="/public/image/cta-bg.jpg" alt="">
       </div>
-      <div class=" bg-gray-100 mt-44 rounded-2xl -translate-x-36 p-10 flex flex-col justify-center gap-10" style="width: 526px; height: 430px;">
+      <div class="max-sm:w-[21rem] max-sm:h-[29rem] w-[32rem] h-[27rem] bg-gray-100 mt-44 rounded-2xl -translate-x-36 max-sm:translate-x-0 p-10 flex flex-col justify-center gap-10" >
         <p class="text-secondary font-bold">NEWSLETTER </p>
         <div class="text-4xl font-bold text-black">Get Up To $100 Off Just Buy 
            <span class="text-primary">Subscribe</span> Newsletter!
           </div>
-          <form id="search" action="" class="flex justify-between items-center pl-4 bg-white w-[28.125rem] h-12 rounded-4xl ">
+          <form id="search" action="" class="flex max-sm:flex-col justify-between items-center pl-4 bg-white w-[28.125rem] h-12 rounded-4xl ">
             <input class="hover:border-primary" type="text" class="searchText border-none" placeholder="Your email..." name="searchKeyword">
             <button class="bg-secondary w-38 h-12 rounded-4xl p-6 hover:bg-primary  flex items-center text-base font-bold text-white ">Subscribe Now</button>
           </form>
@@ -318,6 +310,13 @@
       <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus, iste?</p>
 
     </div>
+
+    <!-- scripts -->
+    <script
+    src="https://kit.fontawesome.com/77a0e9b908.js"
+    crossorigin="anonymous"
+  ></script>
+    <script type="module" src="/src/composables/Script.js"></script>
     
   </body>
 </html>
