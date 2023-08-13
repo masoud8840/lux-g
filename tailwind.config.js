@@ -20,7 +20,7 @@ module.exports = {
         "4xl": "28px",
         "5xl": "120px",
       },
-      
+
     },
   },
   plugins: [],
