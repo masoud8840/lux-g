@@ -1,5 +1,6 @@
 const navbarBtn = document.querySelector(".navbar-menu-toggler");
 const navbarMenu = document.querySelector(".navbar-menu");
+const header = document.querySelector("header");
 let isNavbarOpen = false;
 navbarBtn.addEventListener("click", toggleNavbar);
 
@@ -22,4 +23,13 @@ function toggleNavbarOnResize() {
 }
 toggleNavbarOnResize();
 
+function fadeInNavbar() {
+  if (window.scrollY < 50) {
+    header.classList.remove("fade-in");
+  } else {
+    header.classList.add("fade-in");
+  }
+}
+
 window.addEventListener("resize", toggleNavbarOnResize);
+window.addEventListener("scroll", fadeInNavbar);

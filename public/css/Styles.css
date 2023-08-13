@@ -600,8 +600,25 @@ header{
   width: 100%;
   border-bottom-right-radius: 28px;
   border-bottom-left-radius: 28px;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  font-family: Poppins;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 500ms;
+}
+
+header.fade-in{
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  border-bottom-right-radius: 28px;
+  border-bottom-left-radius: 28px;
   --tw-bg-opacity: 1;
   background-color: rgb(0 113 248 / var(--tw-bg-opacity));
+  padding-top: 0px;
+  padding-bottom: 0px;
   font-family: Poppins;
 }
 
@@ -722,7 +739,6 @@ header{
 .shop-header,
   .product-header{
   display: flex;
-  min-height: 65vh;
   flex-direction: column;
   align-items: center;
   justify-content: center;
@@ -732,8 +748,8 @@ header{
   background-image: url('/public/images/HeaderBackground.jpg');
   background-size: cover;
   background-position: center;
-  -o-object-fit: cover;
-     object-fit: cover;
+  padding-top: 10rem;
+  padding-bottom: 10rem;
 }
 
 @media (min-width: 768px){
@@ -1722,10 +1738,6 @@ header{
   min-height: 25vh;
 }
 
-.min-h-\[65vh\]{
-  min-height: 65vh;
-}
-
 .w-1\/2{
   width: 50%;
 }
@@ -2125,6 +2137,11 @@ header{
   padding-right: 1.5rem;
 }
 
+.py-0{
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
 .py-10{
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
@@ -2334,6 +2351,12 @@ header{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-all{
+  transition-property: all;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   transition-duration: 150ms;
 }

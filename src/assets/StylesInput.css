@@ -18,11 +18,10 @@
 
   /* Navbar */
   header {
-    @apply bg-primary rounded-b-4xl font-poppins fixed z-10 top-0 w-full;
-
-    @apply bg-primary rounded-b-4xl font-poppins fixed z-10 top-0 w-full;
-
-    @apply bg-primary rounded-b-4xl font-poppins fixed z-10 top-0 w-full;
+    @apply rounded-b-4xl font-poppins fixed z-10 top-0 w-full py-4 transition-all duration-500;
+  }
+  header.fade-in {
+    @apply bg-primary rounded-b-4xl py-0 font-poppins fixed z-10 top-0 w-full;
   }
 
   .navbar {
@@ -51,7 +50,7 @@
   /* Shop.html */
   .shop-header,
   .product-header {
-    @apply bg-[url('/public/images/HeaderBackground.jpg')] object-cover bg-center bg-cover min-h-[65vh] rounded-b-4xl md:rounded-b-5xl flex items-center justify-center flex-col gap-4;
+    @apply bg-[url('/public/images/HeaderBackground.jpg')] bg-center bg-cover py-40 rounded-b-4xl md:rounded-b-5xl flex items-center justify-center flex-col gap-4;
   }
   .shop-view-title,
   .product-view-title {
