@@ -14,5 +14,7 @@
   ],
   "author": "Masoud Gharedaghi",
   "license": "ISC",
-  "devDependencies": {}
+  "devDependencies": {
+    "tailwindcss": "^3.3.3"
+  }
 }

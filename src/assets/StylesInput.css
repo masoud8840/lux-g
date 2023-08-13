@@ -18,15 +18,13 @@
 
   /* Navbar */
   header {
-<<<<<<< HEAD
+
     @apply bg-primary rounded-b-4xl font-poppins fixed z-10 top-0 w-full ;
-=======
-<<<<<<< HEAD
+
     @apply bg-primary rounded-b-4xl font-poppins fixed z-10 top-0 w-full;
-=======
+
     @apply bg-primary rounded-b-4xl font-poppins fixed z-10 top-0 w-full ;
->>>>>>> developB
->>>>>>> develop
+
 
   }
 
