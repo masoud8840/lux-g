@@ -3,9 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer base{
-  body{
-    box-sizing: border-box
+@layer base {
+  body {
+    box-sizing: border-box;
   }
 }
 @layer components {
@@ -18,16 +18,11 @@
 
   /* Navbar */
   header {
-<<<<<<< HEAD
-    @apply bg-primary rounded-b-4xl font-poppins fixed z-10 top-0 w-full ;
-=======
-<<<<<<< HEAD
     @apply bg-primary rounded-b-4xl font-poppins fixed z-10 top-0 w-full;
-=======
-    @apply bg-primary rounded-b-4xl font-poppins fixed z-10 top-0 w-full ;
->>>>>>> developB
->>>>>>> develop
 
+    @apply bg-primary rounded-b-4xl font-poppins fixed z-10 top-0 w-full;
+
+    @apply bg-primary rounded-b-4xl font-poppins fixed z-10 top-0 w-full;
   }
 
   .navbar {
@@ -226,17 +221,16 @@
     @apply text-secondary font-semibold text-base;
   }
 
-
   .product-related-products-products {
-    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 mt-6
+    @apply grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 mt-6;
   }
 
   .product-related-products-product {
-    @apply bg-primary/50 rounded-4xl overflow-hidden text-center
+    @apply bg-primary/50 rounded-4xl overflow-hidden text-center;
   }
 
   .product-related-products-product-tag {
-    @apply py-5 text-white block font-medium
+    @apply py-5 text-white block font-medium;
   }
   /* Product.html */
 }
