@@ -1,3 +1,5 @@
+
+//search box
 const searchInput = document.querySelector('.searchtext');
 const trendingDOM = document.querySelector('.Trending');
 
