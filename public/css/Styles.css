@@ -2008,11 +2008,6 @@ header{
   background-color: rgb(238 98 107 / var(--tw-bg-opacity));
 }
 
-.bg-slate-100{
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
 .bg-white{
   --tw-bg-opacity: 1;
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
@@ -2352,12 +2347,6 @@ header{
 .duration-200{
   transition-duration: 200ms;
 }
-
-/* @layer utilities{
-  .activeLi{
-    @apply bg-slate-100 rounded-full opacity-25;
-  }
-} */
 
 .hover\:border-primary:hover{
   --tw-border-opacity: 1;
