@@ -22,6 +22,11 @@ window.addEventListener("load", () => {
       console.log(e.target);
       e.target.classList.add('active')
     });
-    
+    const panination=document.querySelector('.pagination');
+    panination.addEventListener('click',e=>{
+      document.querySelector('.page-item.active').classList.remove('active');
+      e.target.classList.add('active')
+    })
+
   }
 });
