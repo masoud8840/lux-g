@@ -27,6 +27,7 @@ window.addEventListener("load", () => {
       document.querySelector('.page-item.active').classList.remove('active');
       e.target.classList.add('active')
     })
+    //hlhalhfaldfafj;asf
 
   }
 });
