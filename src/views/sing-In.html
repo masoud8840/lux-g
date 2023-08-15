@@ -5,8 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Style Sheet -->
     <link rel="stylesheet" href="/public/css/Styles.css" />
-    <link rel="stylesheet" href="/public/css/responsive.css">
-
     <!-- Poppins Font CDN -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -29,13 +27,13 @@
   <body class="bg-gradient-to-br from-blue-950 to-blue-700 flex justify-center items-center h-screen">
     <div class="container flex flex-col bg-white rounded-3xl justify-center items-center max-w-sm py-10">
         <h1 class="sing-in__title text-blue-900 text-3xl font-semibold font-sans">Sing in</h1>
-        <form class="flex flex-col justify-center">
+        <form class="sing-in flex flex-col justify-center">
             <div class="username flex flex-row-reverse items-center">
-                <input type="text" placeholder="Username" class="my-3 py-3 pl-7 rounded-lg bg-gray-200 outline-none">
+                <input type="text" placeholder="Username" class="username-input my-3 py-3 pl-7 rounded-lg bg-gray-200 outline-none">
                 <i class="fa fa-user -mr-5"></i>
             </div>
             <div class="password flex flex-row-reverse items-center">
-                <input type="password" placeholder="password" class="my-3 py-3 pl-7 rounded-lg bg-gray-200 outline-none">
+                <input type="password" placeholder="password" class="password-input my-3 py-3 pl-7 rounded-lg bg-gray-200 outline-none">
                 <i class="fa fa-lock -mr-5"></i>
             </div>
             <div class="info flex flex-row justify-between">
@@ -45,5 +43,6 @@
             <input type="submit" value="Login" class="bg-blue-900 text-white my-3 py-2 rounded-xl px-4 cursor-pointer shadow-md">
         </form>
     </div>
+    <script src="../composables/index.js"></script>
   </body>
 </html>
