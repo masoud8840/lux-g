@@ -71,41 +71,6 @@ const actualProducts = [
     offPrice: 28,
     newPrice: 18,
   },
-  {
-    id: 5,
-    title: "Assasin Creed",
-    genre: "Action",
-    offPrice: 28,
-    newPrice: 18,
-  },
-  {
-    id: 5,
-    title: "Assasin Creed",
-    genre: "Action",
-    offPrice: 28,
-    newPrice: 18,
-  },
-  {
-    id: 5,
-    title: "Assasin Creed",
-    genre: "Action",
-    offPrice: 28,
-    newPrice: 18,
-  },
-  {
-    id: 5,
-    title: "Assasin Creed",
-    genre: "Action",
-    offPrice: 28,
-    newPrice: 18,
-  },
-  {
-    id: 5,
-    title: "Assasin Creed",
-    genre: "Action",
-    offPrice: 28,
-    newPrice: 18,
-  },
 ];
 
 let products = [];
@@ -141,13 +106,18 @@ function renderProducts() {
             </div>
             `;
     productsList.append(productItem);
+
+    const button = productItem.querySelector(".product-item-buy");
+    button.addEventListener("click", () => {
+      addToCart(prod.id);
+    });
   });
 }
 
 let currentPage = 1;
 function renderPagination() {
   const paginationContainer = document.querySelector(".pagination-pages");
-  let numbersOfProductsInAPage = 8;
+  let numbersOfProductsInAPage = 4;
   products = actualProducts.slice(
     currentPage * numbersOfProductsInAPage - numbersOfProductsInAPage,
     currentPage * numbersOfProductsInAPage
@@ -183,4 +153,23 @@ function setCurrentPage(e) {
   window.location = "#focus-here";
 }
 
-renderPagination();
+const cart = [];
+function addToCart(id) {
+  const cartQtyLabel = document.querySelector(".cart-items");
+  const product = products.find((prod) => prod.id === id);
+  cart.push(product);
+  cartQtyLabel.classList.remove("invisible");
+  cartQtyLabel.textContent = cart.length;
+}
+
+function changePage(plusOrMinus) {
+  const totalPages = document.querySelectorAll(".pagination-pages a").length;
+  if (plusOrMinus === "+" && !(currentPage === totalPages)) {
+    currentPage++;
+  }
+  if (plusOrMinus === "-" && !(currentPage === 1)) {
+    currentPage--;
+  }
+  renderPagination();
+  window.location = "#focus-here";
+}
