@@ -67,7 +67,7 @@ const actualProducts = [
   {
     id: 5,
     title: "Assasin Creed",
-    genre: "Action",
+    genre: "Racing",
     offPrice: 28,
     newPrice: 18,
   },
@@ -172,4 +172,18 @@ function changePage(plusOrMinus) {
   }
   renderPagination();
   window.location = "#focus-here";
+}
+
+function changeCategory(genre) {
+  const activeItem = document.querySelector(".category-options .active");
+  activeItem.classList.remove("active");
+
+  const categoryOptions = document.querySelectorAll(".category-options button");
+  categoryOptions.forEach((category) => {
+    if (category.innerText === genre.toUpperCase()) {
+      category.classList.add("active");
+    }
+  });
+  products = actualProducts.filter((prod) => prod.genre === genre);
+  renderPagination();
 }

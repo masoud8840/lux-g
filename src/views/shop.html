@@ -13,6 +13,7 @@
 
     <!-- Script -->
     <script src="/src/composables/Script.js" defer></script>
+    <script src="/src/composables/Shop.js" defer></script>
     <title>LUXG | Our Shop</title>
   </head>
   <body>
@@ -33,7 +34,7 @@
             >
           </li>
           <li class="signin-btn">
-            <a href="/cart" class="menu-item">
+            <a href="#" class="menu-item">
               <i class="fas fa-regular fa-cart-shopping"></i>
               <span class="cart-items invisible">0</span>
             </a>
@@ -53,11 +54,27 @@
 
       <section class="categories" id="focus-here">
         <section class="category-options">
-          <button class="category-option active">Show all</button>
-          <button class="category-option">adventure</button>
-          <button class="category-option">strategy</button>
-          <button class="category-option">racing</button>
-          <button class="category-option">simulation</button>
+          <button
+            class="category-option active"
+            onclick="changeCategory('show all')"
+          >
+            Show all
+          </button>
+          <button class="category-option" onclick="changeCategory('Adventure')">
+            adventure
+          </button>
+          <button class="category-option" onclick="changeCategory('Strategy')">
+            strategy
+          </button>
+          <button class="category-option" onclick="changeCategory('Racing')">
+            racing
+          </button>
+          <button
+            class="category-option"
+            onclick="changeCategory('Simulation')"
+          >
+            simulation
+          </button>
         </section>
 
         <section class="products-list"></section>
