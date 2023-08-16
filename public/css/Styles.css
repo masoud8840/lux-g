@@ -1698,10 +1698,6 @@ header{
   height: 27rem;
 }
 
-.h-\[29rem\]{
-  height: 29rem;
-}
-
 .h-\[43\.5rem\]{
   height: 43.5rem;
 }
@@ -1772,10 +1768,6 @@ header{
 
 .w-\[20rem\]{
   width: 20rem;
-}
-
-.w-\[21rem\]{
-  width: 21rem;
 }
 
 .w-\[28\.125rem\]{
@@ -2014,6 +2006,11 @@ header{
 .bg-secondary{
   --tw-bg-opacity: 1;
   background-color: rgb(238 98 107 / var(--tw-bg-opacity));
+}
+
+.bg-slate-100{
+  --tw-bg-opacity: 1;
+  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
 }
 
 .bg-white{
@@ -2330,6 +2327,10 @@ header{
   outline-offset: 2px;
 }
 
+.filter{
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .transition{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
@@ -2351,6 +2352,12 @@ header{
 .duration-200{
   transition-duration: 200ms;
 }
+
+/* @layer utilities{
+  .activeLi{
+    @apply bg-slate-100 rounded-full opacity-25;
+  }
+} */
 
 .hover\:border-primary:hover{
   --tw-border-opacity: 1;

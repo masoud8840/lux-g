@@ -1,14 +1,14 @@
 const navbarBtn = document.querySelector(".navbar-menu-toggler");
 const navbarMenu = document.querySelector(".navbar-menu");
 let isNavbarOpen = false;
-navbarBtn.addEventListener("click", toggleNavbar);
+// navbarBtn.addEventListener("click", toggleNavbar);
 
 function toggleNavbar() {
   if (isNavbarOpen) {
-    navbarMenu.classList.remove("block");
+    // navbarMenu.classList.remove("block");
     isNavbarOpen = false;
   } else {
-    navbarMenu.classList.add("block");
+    // navbarMenu.classList.add("block");
     isNavbarOpen = true;
   }
 }

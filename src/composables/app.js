@@ -19,14 +19,14 @@ document.addEventListener("DOMContentLoaded", () => {
         renderProducts(res.data, filters);
       })
       .catch((err) => console.log(err));
-  
-  
+
+
   });
 
   function renderProducts(products, _filters) {
     const filteredProducts = products.filter((p) => {
       return p.title.toLowerCase().includes(_filters.searchItems.toLowerCase());
-      
+
     });
     trendingDOM.innerHTML = "";
 }
@@ -47,12 +47,12 @@ document.addEventListener("DOMContentLoaded", () => {
               <i class="fa fa-shopping-bag"></i>
             </a></button>
           </div>
-        
+
 
         </div>
     `;
     trendingDOM.appendChild(productDiv);
-    
+
   });
 
 searchInput.addEventListener('input',(e)=>{
@@ -60,3 +60,5 @@ searchInput.addEventListener('input',(e)=>{
     filters.searchItems = e.target.value;
     renderProducts(productsData,filters);
   });
+
+  
