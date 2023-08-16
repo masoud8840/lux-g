@@ -14,6 +14,8 @@
       rel="stylesheet"
     />
 
+    <!-- Script -->
+    <script src="/src/composables/Script.js" defer></script>
     <title>LUGX | Home Page</title>
   </head>
   <body>
@@ -33,13 +35,11 @@
               >Contact Us</a
             >
           </li>
-          <li>
-            <a href="/src/views/product.html" class="menu-item"
-              >Product Details</a
-            >
-          </li>
           <li class="signin-btn">
-            <a href="/src/views/sing-In.html" class="menu-item">sign in</a>
+            <a href="/cart" class="menu-item">
+              <i class="fas fa-regular fa-cart-shopping"></i>
+              <span class="cart-items invisible">0</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -555,7 +555,5 @@
       src="https://kit.fontawesome.com/77a0e9b908.js"
       crossorigin="anonymous"
     ></script>
-    <script type="module" src="/src/composables/Script.js"></script>
-    <script type="module" src="/src/composables/app.js"></script>
   </body>
 </html>

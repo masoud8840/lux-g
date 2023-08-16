@@ -43,7 +43,11 @@
     @apply sm:hover:bg-white/10 sm:text-white sm:py-2 sm:px-4 sm:rounded-full transition-colors duration-200 block py-4 border-b-[1px] border-b-gray-200 text-center hover:text-secondary sm:hover:text-white sm:border-0;
   }
   .signin-btn a {
-    @apply sm:font-medium capitalize sm:uppercase sm:bg-secondary sm:hover:bg-secondary border-0;
+    @apply sm:font-medium capitalize sm:uppercase relative border-0;
+  }
+
+  .signin-btn a span {
+    @apply text-xs w-5 h-5 border-2 sm:flex items-center justify-center border-primary rounded-full absolute top-0 left-0 bg-secondary text-white hidden;
   }
   /* Navbar */
 

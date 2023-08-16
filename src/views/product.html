@@ -11,8 +11,6 @@
       crossorigin="anonymous"
     ></script>
 
-    <!-- Script -->
-    <script src="/src/composables/Script.js" defer></script>
     <title>LUXG | Our Shop</title>
   </head>
   <body>
@@ -33,13 +31,15 @@
             >
           </li>
           <li class="signin-btn">
-            <a href="/signin" class="menu-item">sign in</a>
+            <a href="/cart" class="menu-item">
+              <i class="fas fa-regular fa-cart-shopping"></i>
+              <span class="cart-items invisible">0</span>
+            </a>
           </li>
         </ul>
       </nav>
     </header>
-
-    <main class="product-view pt-5">
+    <main class="product-view">
       <section class="product-header">
         <h2 class="product-view-title">{{ productName }}</h2>
         <section class="breadcrumb">
@@ -143,5 +143,9 @@
         <span>Design: TeamWork</span>
       </footer>
     </main>
+
+    <!-- Script -->
+    <script type="module" src="/src/composables/products.js"></script>
+    <script type="module" src="/src/composables/Script.js"></script>
   </body>
 </html>

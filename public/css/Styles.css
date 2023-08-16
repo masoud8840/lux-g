@@ -715,21 +715,42 @@ header.fade-in{
 }
 
 .signin-btn a{
+  position: relative;
   border-width: 0px;
   text-transform: capitalize;
 }
 
 @media (min-width: 640px){
   .signin-btn a{
-    --tw-bg-opacity: 1;
-    background-color: rgb(238 98 107 / var(--tw-bg-opacity));
     font-weight: 500;
     text-transform: uppercase;
   }
+}
 
-  .signin-btn a:hover{
-    --tw-bg-opacity: 1;
-    background-color: rgb(238 98 107 / var(--tw-bg-opacity));
+.signin-btn a span{
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: none;
+  height: 1.25rem;
+  width: 1.25rem;
+  align-items: center;
+  justify-content: center;
+  border-radius: 9999px;
+  border-width: 2px;
+  --tw-border-opacity: 1;
+  border-color: rgb(0 113 248 / var(--tw-border-opacity));
+  --tw-bg-opacity: 1;
+  background-color: rgb(238 98 107 / var(--tw-bg-opacity));
+  font-size: 0.75rem;
+  line-height: 1rem;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px){
+  .signin-btn a span{
+    display: flex;
   }
 }
 
@@ -1476,6 +1497,10 @@ header.fade-in{
   visibility: visible;
 }
 
+.invisible{
+  visibility: hidden;
+}
+
 .fixed{
   position: fixed;
 }
@@ -1490,6 +1515,10 @@ header.fade-in{
 
 .-bottom-5{
   bottom: -1.25rem;
+}
+
+.left-0{
+  left: 0px;
 }
 
 .left-1\/2{
@@ -1688,6 +1717,10 @@ header.fade-in{
   height: 11rem;
 }
 
+.h-5{
+  height: 1.25rem;
+}
+
 .h-52{
   height: 13rem;
 }
@@ -1762,6 +1795,10 @@ header.fade-in{
 
 .w-4\/5{
   width: 80%;
+}
+
+.w-5{
+  width: 1.25rem;
 }
 
 .w-52{
@@ -1974,6 +2011,10 @@ header.fade-in{
   border-width: 1px;
 }
 
+.border-2{
+  border-width: 2px;
+}
+
 .border-4{
   border-width: 4px;
 }
@@ -1994,6 +2035,11 @@ header.fade-in{
 .border-gray-200{
   --tw-border-opacity: 1;
   border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+
+.border-primary{
+  --tw-border-opacity: 1;
+  border-color: rgb(0 113 248 / var(--tw-border-opacity));
 }
 
 .border-b-gray-200{
@@ -2236,6 +2282,11 @@ header.fade-in{
 .text-xl{
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.text-xs{
+  font-size: 0.75rem;
+  line-height: 1rem;
 }
 
 .font-bold{
@@ -2644,11 +2695,6 @@ header.fade-in{
     border-radius: 9999px;
   }
 
-  .sm\:bg-secondary{
-    --tw-bg-opacity: 1;
-    background-color: rgb(238 98 107 / var(--tw-bg-opacity));
-  }
-
   .sm\:px-4{
     padding-left: 1rem;
     padding-right: 1rem;
@@ -2675,11 +2721,6 @@ header.fade-in{
   .sm\:text-white{
     --tw-text-opacity: 1;
     color: rgb(255 255 255 / var(--tw-text-opacity));
-  }
-
-  .sm\:hover\:bg-secondary:hover{
-    --tw-bg-opacity: 1;
-    background-color: rgb(238 98 107 / var(--tw-bg-opacity));
   }
 
   .sm\:hover\:bg-white\/10:hover{

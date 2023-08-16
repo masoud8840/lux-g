@@ -33,7 +33,10 @@
             >
           </li>
           <li class="signin-btn">
-            <a href="/signin" class="menu-item">sign in</a>
+            <a href="/cart" class="menu-item">
+              <i class="fas fa-regular fa-cart-shopping"></i>
+              <span class="cart-items invisible">0</span>
+            </a>
           </li>
         </ul>
       </nav>
@@ -48,7 +51,7 @@
         </section>
       </section>
 
-      <section class="categories">
+      <section class="categories" id="focus-here">
         <section class="category-options">
           <button class="category-option active">Show all</button>
           <button class="category-option">adventure</button>
@@ -56,36 +59,13 @@
           <button class="category-option">racing</button>
           <button class="category-option">simulation</button>
         </section>
-        <section class="products-list">
-          <article class="product-item group">
-            <img
-              class="product-item-img"
-              src="/public/images/Products/Product02.jpg"
-              alt="product-img"
-            />
-            <div class="product-item-description">
-              <div>
-                <span class="product-item-genre">Action</span>
-                <h4 class="product-item-title">Assasin Creed</h4>
-              </div>
-              <button class="product-item-buy">
-                <i class="fas fa-sharp fa-light fa-bag-shopping"></i>
-              </button>
-            </div>
-            <div class="product-item-price">
-              <span class="off-price">$28</span>
-              <span class="new-price">$18</span>
-            </div>
-          </article>
-        </section>
+
+        <section class="products-list"></section>
+
         <section class="pagination">
-          <a href="#" class="page-item">&lt;</a>
-          <div class="pagination-pages">
-            <a href="#" class="page-item active">1</a>
-            <a href="#" class="page-item">2</a>
-            <a href="#" class="page-item">3</a>
-          </div>
-          <a href="#" class="page-item">&gt;</a>
+          <button class="page-item" onclick="changePage('-')">&lt;</button>
+          <div class="pagination-pages"></div>
+          <button class="page-item" onclick="changePage('+')">&gt;</button>
         </section>
       </section>
 
