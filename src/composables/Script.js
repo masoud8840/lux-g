@@ -33,3 +33,154 @@ function fadeInNavbar() {
 
 window.addEventListener("resize", toggleNavbarOnResize);
 window.addEventListener("scroll", fadeInNavbar);
+
+// Shop.html
+const actualProducts = [
+  {
+    id: 1,
+    title: "Assasin Creed",
+    genre: "Action",
+    offPrice: 28,
+    newPrice: 18,
+  },
+  {
+    id: 2,
+    title: "Assasin Creed",
+    genre: "Action",
+    offPrice: 28,
+    newPrice: 18,
+  },
+  {
+    id: 3,
+    title: "Assasin Creed",
+    genre: "Action",
+    offPrice: 28,
+    newPrice: 18,
+  },
+  {
+    id: 4,
+    title: "Assasin Creed",
+    genre: "Action",
+    offPrice: 28,
+    newPrice: 18,
+  },
+  {
+    id: 5,
+    title: "Assasin Creed",
+    genre: "Action",
+    offPrice: 28,
+    newPrice: 18,
+  },
+  {
+    id: 5,
+    title: "Assasin Creed",
+    genre: "Action",
+    offPrice: 28,
+    newPrice: 18,
+  },
+  {
+    id: 5,
+    title: "Assasin Creed",
+    genre: "Action",
+    offPrice: 28,
+    newPrice: 18,
+  },
+  {
+    id: 5,
+    title: "Assasin Creed",
+    genre: "Action",
+    offPrice: 28,
+    newPrice: 18,
+  },
+  {
+    id: 5,
+    title: "Assasin Creed",
+    genre: "Action",
+    offPrice: 28,
+    newPrice: 18,
+  },
+  {
+    id: 5,
+    title: "Assasin Creed",
+    genre: "Action",
+    offPrice: 28,
+    newPrice: 18,
+  },
+];
+
+let products = [];
+
+const productsList = document.querySelector(".products-list");
+
+function renderProducts() {
+  // Empty productlist
+  productsList.innerHTML = "";
+
+  products.map((prod) => {
+    const productItem = document.createElement("article");
+    productItem.classList.add("product-item", "group");
+    // productItem.href = `/src/views/product.html?id=${prod.id}`;
+
+    productItem.innerHTML = `
+  <img class="product-item-img"
+              src="/public/images/Products/Product02.jpg"
+              alt="product-img"
+            />
+            <div class="product-item-description">
+              <div>
+                <span class="product-item-genre">${prod.genre}</span>
+                <a href="/src/views/product.html?id=${prod.id}" class="product-item-title">${prod.title}</a>
+              </div>
+              <button class="product-item-buy">
+                <i class="fas fa-sharp fa-light fa-bag-shopping"></i>
+              </button>
+            </div>
+            <div class="product-item-price">
+              <span class="off-price">$${prod.offPrice}</span>
+              <span class="new-price">$${prod.newPrice}</span>
+            </div>
+            `;
+    productsList.append(productItem);
+  });
+}
+
+let currentPage = 1;
+function renderPagination() {
+  const paginationContainer = document.querySelector(".pagination-pages");
+  let numbersOfProductsInAPage = 8;
+  products = actualProducts.slice(
+    currentPage * numbersOfProductsInAPage - numbersOfProductsInAPage,
+    currentPage * numbersOfProductsInAPage
+  );
+  let productsLength = actualProducts.length;
+  let numberOfPages = Math.ceil(productsLength / numbersOfProductsInAPage);
+
+  // empty current pagination
+  paginationContainer.innerHTML = "";
+
+  for (let page = 1; page <= numberOfPages; page++) {
+    const a = document.createElement("a");
+    a.href = "#";
+    a.textContent = page;
+    a.className = "page-item";
+
+    if (page === currentPage) {
+      a.classList.add("active");
+    }
+
+    a.addEventListener("click", setCurrentPage);
+
+    paginationContainer.append(a);
+  }
+
+  renderProducts();
+}
+
+function setCurrentPage(e) {
+  e.preventDefault();
+  currentPage = +e.target.textContent;
+  renderPagination();
+  window.location = "#focus-here";
+}
+
+renderPagination();

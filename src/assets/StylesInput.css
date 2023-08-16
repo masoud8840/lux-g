@@ -10,7 +10,7 @@
 }
 @layer components {
   * {
-    @apply font-poppins;
+    @apply font-poppins scroll-smooth;
   }
   .container {
     @apply mx-auto px-3 lg:p-3;
@@ -77,7 +77,7 @@
   }
 
   .product-item {
-    @apply bg-gray-200 rounded-4xl overflow-hidden cursor-pointer relative;
+    @apply bg-gray-200 rounded-4xl overflow-hidden relative;
   }
   .products-list {
     @apply gap-7 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-4 mt-16;
@@ -93,7 +93,7 @@
     @apply text-gray-500;
   }
   .product-item-title {
-    @apply font-medium text-lg group-hover:text-primary transition-colors duration-200;
+    @apply font-medium cursor-pointer block text-lg group-hover:text-primary transition-colors duration-200;
   }
 
   .product-item-buy {
