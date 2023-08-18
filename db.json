@@ -1,0 +1,32 @@
+{
+    "products" : [
+        {
+            "id":1,
+            "title":"Action",
+            "imageUrl":"/public/image/categories-01.jpg",
+            "class": "categories"            
+        },
+        {
+            "id":2,
+            "title":"Action",
+            "imageUrl":"/public/image/categories-02.jpg",
+            "class": "categories"            
+        },
+        {
+            "id":3,
+            "title":"Action",
+            "imageUrl":"/public/image/categories-03.jpg",
+            "class": "categories"            
+        },
+        {
+            "id":4,
+            "title":"Action",
+            "imageUrl":"/public/image/categories-04.jpg",
+            "class": "categories"            
+        }
+   
+
+    ]
+
+}
+  

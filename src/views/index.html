@@ -47,8 +47,8 @@
           <P class="text-base leading-7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id nesciunt amet consectetur quo excepturi unde expedita quaerat voluptate numquam iste eum voluptates dolorem corporis dolor nihil beatae, tempore accusantium omnis!</P>
           <div class="search-input ">
             <form id="search" action="" class="flex justify-between items-center  bg-white w-[28.125rem]  h-12 rounded-4xl max-sm:w-80 ">
-              <input type="text" class="searchText border-none text-black text-center  m-2" placeholder="Type Something" name="searchKeyword">
-              <button class="bg-secondary w-38 max-sm:w-24 h-12 rounded-4xl p-6 hover:bg-primary   inline-flex items-center  text-sm max-sm:text-xs font-bold ">Search Now</button>
+              <input type="text" class="searchtext border-none text-black text-center  m-2" placeholder="Type Something" name="searchKeyword">
+              <button class="search bg-secondary w-38 max-sm:w-24 h-12 rounded-4xl p-6 hover:bg-primary   inline-flex items-center  text-sm max-sm:text-xs font-bold ">Search Now</button>
             </form>
           </div>
           
@@ -110,7 +110,7 @@
         <button class=" max-sm:hidden w-32 h-12 bg-secondary text-sm font-semibold text-white rounded-4xl mr-10">VIEW ALL</button>
       </div>
       <div class="trending-cards mt-10 flex max-sm:grid justify-center items-center gap-5 rounded-xl">
-        <div class="w-[20rem] h-80 bg-gray-100 grid justify-center">
+        <!-- <div class="w-[20rem] h-80 bg-gray-100 grid justify-center">
           <img class="rounded-2xl w-[20rem] h-56" src="/public/image/trending-01.jpg" alt="">
           <div class="flex justify-between items-center p-4">
             <div class="m-4 ">
@@ -123,49 +123,8 @@
           </div>
         
 
-        </div>
-        <div class="w-[20rem] h-80 bg-gray-100 grid justify-center">
-          <img class="rounded-2xl w-[20rem] h-56" src="/public/image/trending-02.jpg" alt="">
-          <div class="flex justify-between items-center p-4">
-            <div class="m-4 ">
-              <p class="text-gray-500">Action</p>
-              <p class="text-black font-bold text-lg">Assasin Creed</p>
-            </div>
-            <button><a href="/src/views/product.html" class="w-10 h-10 bg-secondary hover:bg-primary cursor-pointer rounded-full flex justify-center items-center text-white">
-              <i class="fa fa-shopping-bag"></i>
-            </a></button>
-          </div>
+        </div> -->
         
-
-        </div>
-        <div class="w-[20rem] h-80 bg-gray-100 grid justify-center">
-          <img class="rounded-2xl w-[20rem] h-56" src="/public/image/trending-03.jpg" alt="">
-          <div class="flex justify-between items-center p-4">
-            <div class="m-4 ">
-              <p class="text-gray-500">Action</p>
-              <p class="text-black font-bold text-lg">Assasin Creed</p>
-            </div>
-            <button><a href="/src/views/product.html" class="w-10 h-10 bg-secondary hover:bg-primary cursor-pointer rounded-full flex justify-center items-center text-white">
-              <i class="fa fa-shopping-bag"></i>
-            </a></button> 
-          </div>
-        
-
-        </div>
-        <div class="w-[20rem] h-80 bg-gray-100 grid justify-center">
-          <img class="rounded-2xl w-[20rem] h-56" src="/public/image/trending-04.jpg" alt="">
-          <div class="flex justify-between items-center p-4">
-            <div class="m-4 ">
-              <p class="text-gray-500">Action</p>
-              <p class="text-black font-bold text-lg">Assasin Creed</p>
-            </div>
-            <button><a href="/src/views/product.html" class="w-10 h-10 bg-secondary hover:bg-primary cursor-pointer rounded-full flex justify-center items-center text-white">
-              <i class="fa fa-shopping-bag"></i>
-            </a></button>
-          </div>
-        
-
-        </div>
     
       </div>
     </section>
@@ -278,7 +237,7 @@
     <!-- cta -->
     <section class="cta mt-32 flex max-sm:grid justify-center items-center ">
 
-      <div class="w-[21rem] h-[29rem]  bg-gray-100 rounded-4xl max-sm:translate-x-0 translate-x-36 mt-16 flex flex-col justify-center  items-center p-12  gap-10 max-sm:gap-4" >
+      <div class="max-sm:w-[21rem] max-sm:h-[29rem] w-[32rem] h-[27rem] bg-gray-100 rounded-4xl max-sm:translate-x-0 translate-x-36 mt-16 flex flex-col justify-center  items-center p-12  gap-10 max-sm:gap-4" >
         <p class="text-secondary font-bold ">OUR SHOP</p>
         <div class="text-4xl  font-bold text-black">Go Pre-Order Buy & Get Best <span class="text-primary">Prices</span> For You!</div>
         <div class="font-bold">Lorem ipsum dolor consectetur adipiscing, sed do eiusmod tempor incididunt</div>
@@ -318,6 +277,7 @@
   ></script>
     <script type="module" src="/src/composables/Script.js"></script>
     <script type="module" src="/src/composables/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     
   </body>
 </html>

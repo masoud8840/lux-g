@@ -1,7 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 
 /*
-! tailwindcss v3.3.2 | MIT License | https://tailwindcss.com
+! tailwindcss v3.3.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -193,6 +193,10 @@ select,
 textarea {
   font-family: inherit;
   /* 1 */
+  font-feature-settings: inherit;
+  /* 1 */
+  font-variation-settings: inherit;
+  /* 1 */
   font-size: 100%;
   /* 1 */
   font-weight: inherit;
@@ -344,6 +348,14 @@ menu {
 }
 
 /*
+Reset default styling for dialogs.
+*/
+
+dialog {
+  padding: 0;
+}
+
+/*
 Prevent resizing textareas horizontally by default.
 */
 
@@ -422,6 +434,10 @@ video {
 
 [hidden] {
   display: none;
+}
+
+body{
+  box-sizing: border-box
 }
 
 *, ::before, ::after{
@@ -1517,6 +1533,15 @@ header{
   margin-bottom: 4rem;
 }
 
+.my-3{
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
+}
+
+.-mr-5{
+  margin-right: -1.25rem;
+}
+
 .-mt-28{
   margin-top: -7rem;
 }
@@ -1605,10 +1630,6 @@ header{
   margin-top: 2rem;
 }
 
-.mb-40{
-  margin-bottom: 10rem;
-}
-
 .block{
   display: block;
 }
@@ -1673,6 +1694,14 @@ header{
   height: 20rem;
 }
 
+.h-\[27rem\]{
+  height: 27rem;
+}
+
+.h-\[29rem\]{
+  height: 29rem;
+}
+
 .h-\[43\.5rem\]{
   height: 43.5rem;
 }
@@ -1685,32 +1714,8 @@ header{
   height: auto;
 }
 
-.h-full{
-  height: 100%;
-}
-
-.h-\[33\]{
-  height: 33;
-}
-
-.h-\[34rem\]{
-  height: 34rem;
-}
-
-.h-\[36rem\]{
-  height: 36rem;
-}
-
-.h-\[29rem\]{
-  height: 29rem;
-}
-
-.h-\[\]{
-  height: ;
-}
-
-.h-\[27rem\]{
-  height: 27rem;
+.h-screen{
+  height: 100vh;
 }
 
 .min-h-\[25vh\]{
@@ -1769,8 +1774,16 @@ header{
   width: 20rem;
 }
 
+.w-\[21rem\]{
+  width: 21rem;
+}
+
 .w-\[28\.125rem\]{
   width: 28.125rem;
+}
+
+.w-\[32rem\]{
+  width: 32rem;
 }
 
 .w-\[90\%\]{
@@ -1790,12 +1803,8 @@ header{
   width: max-content;
 }
 
-.w-\[32rem\]{
-  width: 32rem;
-}
-
-.w-\[21rem\]{
-  width: 21rem;
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .-translate-x-1\/2{
@@ -1833,12 +1842,12 @@ header{
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
-.grid-cols-5{
-  grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
 .flex-row{
   flex-direction: row;
+}
+
+.flex-row-reverse{
+  flex-direction: row-reverse;
 }
 
 .flex-col{
@@ -1897,12 +1906,20 @@ header{
   border-radius: 1rem;
 }
 
+.rounded-3xl{
+  border-radius: 1.5rem;
+}
+
 .rounded-4xl{
   border-radius: 28px;
 }
 
 .rounded-full{
   border-radius: 9999px;
+}
+
+.rounded-lg{
+  border-radius: 0.5rem;
 }
 
 .rounded-xl{
@@ -1970,6 +1987,11 @@ header{
   border-bottom-color: rgb(229 231 235 / var(--tw-border-opacity));
 }
 
+.bg-blue-900{
+  --tw-bg-opacity: 1;
+  background-color: rgb(30 58 138 / var(--tw-bg-opacity));
+}
+
 .bg-gray-100{
   --tw-bg-opacity: 1;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity));
@@ -1999,21 +2021,6 @@ header{
   background-color: rgb(250 250 250 / var(--tw-bg-opacity));
 }
 
-.bg-gray-400{
-  --tw-bg-opacity: 1;
-  background-color: rgb(156 163 175 / var(--tw-bg-opacity));
-}
-
-.bg-gray-50{
-  --tw-bg-opacity: 1;
-  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
-.bg-red-300{
-  --tw-bg-opacity: 1;
-  background-color: rgb(252 165 165 / var(--tw-bg-opacity));
-}
-
 .bg-\[url\(\'\.\.\/\.\.\/public\/images\/FooterBackground\.jpg\'\)\]{
   background-image: url('../../public/images/FooterBackground.jpg');
 }
@@ -2028,6 +2035,20 @@ header{
 
 .bg-\[url\(\'\/public\/images\/HeaderBackground\.jpg\'\)\]{
   background-image: url('/public/images/HeaderBackground.jpg');
+}
+
+.bg-gradient-to-br{
+  background-image: linear-gradient(to bottom right, var(--tw-gradient-stops));
+}
+
+.from-blue-950{
+  --tw-gradient-from: #172554 var(--tw-gradient-from-position);
+  --tw-gradient-to: rgb(23 37 84 / 0) var(--tw-gradient-to-position);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+}
+
+.to-blue-700{
+  --tw-gradient-to: #1d4ed8 var(--tw-gradient-to-position);
 }
 
 .bg-cover{
@@ -2138,6 +2159,10 @@ header{
   padding-left: 1rem;
 }
 
+.pl-7{
+  padding-left: 1.75rem;
+}
+
 .pt-5{
   padding-top: 1.25rem;
 }
@@ -2152,6 +2177,10 @@ header{
 
 .font-poppins{
   font-family: Poppins;
+}
+
+.font-sans{
+  font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .text-2xl{
@@ -2246,6 +2275,11 @@ header{
   color: rgb(0 0 0 / var(--tw-text-opacity));
 }
 
+.text-blue-900{
+  --tw-text-opacity: 1;
+  color: rgb(30 58 138 / var(--tw-text-opacity));
+}
+
 .text-gray-300{
   --tw-text-opacity: 1;
   color: rgb(209 213 219 / var(--tw-text-opacity));
@@ -2283,6 +2317,12 @@ header{
 
 .line-through{
   text-decoration-line: line-through;
+}
+
+.shadow-md{
+  --tw-shadow: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
+  --tw-shadow-colored: 0 4px 6px -1px var(--tw-shadow-color), 0 2px 4px -2px var(--tw-shadow-color);
+  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
 .outline-none{
@@ -2325,11 +2365,6 @@ header{
 .hover\:bg-secondary:hover{
   --tw-bg-opacity: 1;
   background-color: rgb(238 98 107 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-purple-50:hover{
-  --tw-bg-opacity: 1;
-  background-color: rgb(250 245 255 / var(--tw-bg-opacity));
 }
 
 .hover\:text-secondary:hover{
@@ -2380,48 +2415,8 @@ header{
 }
 
 @media not all and (min-width: 640px){
-  .max-sm\:left-3{
-    left: 0.75rem;
-  }
-
-  .max-sm\:left-36{
-    left: 9rem;
-  }
-
-  {
-    right: -9rem;
-  }
-
-  .max-sm\:right-11{
-    right: 2.75rem;
-  }
-
-  .max-sm\:-bottom-0{
-    bottom: -0px;
-  }
-
-  .max-sm\:-bottom-10{
-    bottom: -2.5rem;
-  }
-
-  .max-sm\:bottom-10{
-    bottom: 2.5rem;
-  }
-
   .max-sm\:bottom-8{
     bottom: 2rem;
-  }
-
-  .max-sm\:left-8{
-    left: 2rem;
-  }
-
-  .max-sm\:left-20{
-    left: 5rem;
-  }
-
-  .max-sm\:left-16{
-    left: 4rem;
   }
 
   .max-sm\:left-10{
@@ -2441,6 +2436,10 @@ header{
     margin-right: 0.75rem;
   }
 
+  .max-sm\:mb-40{
+    margin-bottom: 10rem;
+  }
+
   .max-sm\:ml-0{
     margin-left: 0px;
   }
@@ -2453,6 +2452,10 @@ header{
     margin-top: 5rem;
   }
 
+  .max-sm\:mt-4{
+    margin-top: 1rem;
+  }
+
   .max-sm\:mt-40{
     margin-top: 10rem;
   }
@@ -2461,44 +2464,8 @@ header{
     margin-top: 2rem;
   }
 
-  .max-sm\:mt-2{
-    margin-top: 0.5rem;
-  }
-
-  .max-sm\:mt-32{
-    margin-top: 8rem;
-  }
-
-  .max-sm\:mt-5{
-    margin-top: 1.25rem;
-  }
-
-  .max-sm\:mt-52{
-    margin-top: 13rem;
-  }
-
-  .max-sm\:mt-6{
-    margin-top: 1.5rem;
-  }
-
-  .max-sm\:mt-64{
-    margin-top: 16rem;
-  }
-
-  .max-sm\:mt-72{
-    margin-top: 18rem;
-  }
-
   .max-sm\:mt-96{
     margin-top: 24rem;
-  }
-
-  .max-sm\:mb-40{
-    margin-bottom: 10rem;
-  }
-
-  .max-sm\:mt-4{
-    margin-top: 1rem;
   }
 
   .max-sm\:flex{
@@ -2513,92 +2480,16 @@ header{
     display: none;
   }
 
-  .max-sm\:h-auto{
-    height: auto;
-  }
-
-  .max-sm\:h-20{
-    height: 5rem;
-  }
-
-  .max-sm\:h-\[\]{
-    height: ;
-  }
-
-  .max-sm\:h-\[40\]{
-    height: 40;
-  }
-
-  .max-sm\:h-full{
-    height: 100%;
-  }
-
-  .max-sm\:h-40{
-    height: 10rem;
-  }
-
-  .max-sm\:h-3{
-    height: 0.75rem;
-  }
-
-  .max-sm\:h-32{
-    height: 8rem;
-  }
-
-  .max-sm\:h-96{
-    height: 24rem;
-  }
-
-  .max-sm\:h-6{
-    height: 1.5rem;
-  }
-
-  .max-sm\:h-\[3352px\]{
-    height: 3352px;
-  }
-
-  .max-sm\:h-\[100\]{
-    height: 100;
-  }
-
-  .max-sm\:h-\[100re\]{
-    height: 100re;
-  }
-
   .max-sm\:h-\[100rem\]{
     height: 100rem;
-  }
-
-  .max-sm\:h-80{
-    height: 20rem;
-  }
-
-  .max-sm\:h-\[209rem\]{
-    height: 209rem;
-  }
-
-  .max-sm\:h-\[80rem\]{
-    height: 80rem;
-  }
-
-  .max-sm\:h-\[90rem\]{
-    height: 90rem;
-  }
-
-  .max-sm\:h-\[rem\]{
-    height: rem;
-  }
-
-  .max-sm\:h-\[27rem\]{
-    height: 27rem;
   }
 
   .max-sm\:h-\[29rem\]{
     height: 29rem;
   }
 
-  .max-sm\:h-16{
-    height: 4rem;
+  .max-sm\:h-full{
+    height: 100%;
   }
 
   .max-sm\:w-24{
@@ -2613,60 +2504,17 @@ header{
     width: 24rem;
   }
 
-  .max-sm\:w-full{
-    width: 100%;
-  }
-
-  .max-sm\:w-1{
-    width: 0.25rem;
-  }
-
-  .max-sm\:w-16{
-    width: 4rem;
-  }
-
-  .max-sm\:w-20{
-    width: 5rem;
-  }
-
-  .max-sm\:w-32{
-    width: 8rem;
-  }
-
-  .max-sm\:w-72{
-    width: 18rem;
-  }
-
-  .max-sm\:w-60{
-    width: 15rem;
-  }
-
-  .max-sm\:w-40{
-    width: 10rem;
-  }
-
-  .max-sm\:w-\[20rem\]{
-    width: 20rem;
-  }
-
   .max-sm\:w-\[21rem\]{
     width: 21rem;
   }
 
-  .max-sm\:w-48{
-    width: 12rem;
+  .max-sm\:w-full{
+    width: 100%;
   }
 
   .max-sm\:translate-x-0{
     --tw-translate-x: 0px;
     transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-  }
-
-  @media not all and (min-width: 640px){
-    .max-sm\:max-sm\:translate-x-0{
-      --tw-translate-x: 0px;
-      transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
-    }
   }
 
   .max-sm\:grid-cols-1{
@@ -2681,32 +2529,12 @@ header{
     align-items: center;
   }
 
-  .max-sm\:justify-normal{
-    justify-content: normal;
-  }
-
-  .max-sm\:justify-start{
-    justify-content: flex-start;
-  }
-
-  .max-sm\:gap-4{
-    gap: 1rem;
-  }
-
-  .max-sm\:gap-8{
-    gap: 2rem;
-  }
-
-  .max-sm\:gap-12{
-    gap: 3rem;
-  }
-
   .max-sm\:gap-16{
     gap: 4rem;
   }
 
-  .max-sm\:gap-3{
-    gap: 0.75rem;
+  .max-sm\:gap-4{
+    gap: 1rem;
   }
 
   .max-sm\:rounded-xl{
@@ -2727,27 +2555,9 @@ header{
     padding: 1rem;
   }
 
-  .max-sm\:p-2{
-    padding: 0.5rem;
-  }
-
-  .max-sm\:p-16{
-    padding: 4rem;
-  }
-
   .max-sm\:px-2{
     padding-left: 0.5rem;
     padding-right: 0.5rem;
-  }
-
-  .max-sm\:py-9{
-    padding-top: 2.25rem;
-    padding-bottom: 2.25rem;
-  }
-
-  .max-sm\:py-16{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
   }
 
   .max-sm\:text-center{
@@ -2772,16 +2582,6 @@ header{
   .max-sm\:text-xs{
     font-size: 0.75rem;
     line-height: 1rem;
-  }
-
-  .max-sm\:text-lg{
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
-
-  .max-sm\:text-2xl{
-    font-size: 1.5rem;
-    line-height: 2rem;
   }
 
   .max-sm\:font-medium{
